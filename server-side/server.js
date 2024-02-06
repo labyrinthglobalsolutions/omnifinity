@@ -2,10 +2,10 @@ import express from "express";
 import dotenv from "dotenv";
 const app = express();
 
-
 import cors from "cors";
 import addWwwToUrl from "./utils/urls.js";
 import connectDB from "./Database/db.js";
+import AdminRouter from "./Routes/adminRoutes.js";
 
 //config
 dotenv.config();
@@ -24,10 +24,13 @@ app.use(
     credentials: true,
   })
 );
-
+app.use(
+  "/api/v1",
+  AdminRouter
+);
 // Define a simple route
-app.get('/', (req, res) => {
-  res.send('Hello, this is your Node.js server!');
+app.get("/", (req, res) => {
+  res.send("Hello, this is your Node.js server!");
 });
 
 // Start the server
