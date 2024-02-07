@@ -3,11 +3,11 @@ import "./superadminVerify.css";
 
 import { useNavigate } from "react-router-dom";
 
-const SuperadminVerify = () => {
+const AdminEmailVerify = () => {
   const [email, setEmail] = useState("");
   const [code, setVerifyCode] = useState("");
 
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
   const verifyUser = async (e) => {
     e.preventDefault();
     const jsonData = {
@@ -34,9 +34,7 @@ const SuperadminVerify = () => {
         setEmail("");
         setVerifyCode("");
       alert("Verification successful:", data);
-
-        console.log("Navigating to /login");
-        // navigate("/");
+         navigate("/adminLogin");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -80,4 +78,4 @@ const SuperadminVerify = () => {
   );
 };
 
-export default SuperadminVerify;
+export default AdminEmailVerify;

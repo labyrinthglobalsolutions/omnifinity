@@ -9,12 +9,12 @@
     margin-left: 40%;
     height: 90vh;
     margin-top: 30px;
-    border: 4px dashed #ccc;
+    border: 4px dashed #7a1515;
    
  
 }
 .registration-container h1{
-    color: beige;
+    color: rgb(19, 19, 14);
 }
 
 .form-container {
@@ -45,7 +45,7 @@
 }
 
 .form-group label {
-color: rgb(246, 246, 252);
+color: rgb(19, 19, 37);
     text-align: left; /* Align labels to the left */
     width: 100%; /* Make the width 100% to prevent overlapping */
 }
