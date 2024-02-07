@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './adminRegistration.css'; // Create a new CSS file for styling
+import { useNavigate } from 'react-router-dom';
 
 function AdminRegistration() {
     const [formData, setFormData] = useState({
@@ -8,7 +9,7 @@ function AdminRegistration() {
         email: '',
         password: '',
     });
-
+const navigate = useNavigate();
     const [error, setError] = useState('');
 
     const handleInputChange = (e) => {
@@ -37,6 +38,7 @@ function AdminRegistration() {
                 if (response.status === 201) {
                     response.json().then((data) => {
                         alert('Registration successful:', data);
+                        navigate('/adminVerifyEmail');
                     });
                 } else if (response.status === 500) {
                     response.json().then((data) => {

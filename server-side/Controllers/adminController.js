@@ -63,7 +63,6 @@ function sendResetPasswordEmail(email, resetToken) {
 export const AdminRegistration = CatchAsyncError(async (req, res) => {
   try {
     const { username, email, password } = req.body;
-console.log(req.body);
     const existingUser = await AdminModel.findOne({
       $or: [{ username }, { email }],
     });

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './adminRegistration.css';
 const AdminLogin = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
-// const navigate = useNavigate();
+ const navigate = useNavigate();
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -28,7 +28,7 @@ const AdminLogin = () => {
         // Login successful
         alert('Login successful:', data);
 
-
+navigate('/adminDashboard');
         // Store the token in session storage
         sessionStorage.setItem('token', data.token);
 
