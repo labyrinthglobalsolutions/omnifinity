@@ -36,7 +36,7 @@ const ScrollToTopButton = () => {
 
   return isVisible ? (
     <div className="scroll-to-top-button" onClick={scrollToTop}>
-      <FaArrowUp  />
+      <FaArrowUp />
     </div>
   ) : null;
 };
