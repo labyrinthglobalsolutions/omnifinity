@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer.js";
 import { Carousel } from "react-bootstrap";
 import Player from "../Videos/pexels-tima-miroshnichenko-5377697 (2160p).mp4";
 import { IoHome } from "react-icons/io5";
@@ -165,7 +165,7 @@ export default function HomePage() {
           <div className="col-12 text-center">
             <h1>What We Do</h1>
           </div>
-          <div className="col-12  w-100">
+          <div className="col-12 text-center  w-100">
             <div className="container-fluid w-100  p-0">
               <div className="row">
                 <div className="col-md-4 col-12 mb-2">
@@ -207,17 +207,17 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="col-12 w-100">
-            <div className="container-fluid w-100 p-0">
+          <div className="col-12 w-100 text-center">
+            <div className="container-fluid w-100 text-center p-0">
               <div className="row">
-                <div className="col-12 col-md-6 d-flex flex-column justify-content-center text-center">
+                <div className="col-12 col-md-6  d-flex flex-column justify-content-center text-center">
                   <h1 className="text-primary">{filtered[0].title}</h1>
                   <p>{filtered[0].description}</p>
                   <div>
                     <button className="btn btn-primary">Learn More</button>
                   </div>
                 </div>
-                <div className="col-12 col-md-6 text-center">
+                <div className="col-12 col-md-6  d-flex justify-content-center text-center">
                   <img
                     src={filtered[0].imageURL}
                     alt="ReactImage"
@@ -294,7 +294,7 @@ export default function HomePage() {
       <div className="container">
         <div className="row tex-center">
           <div className="col-12 mb-3 mt-3">
-            <h1>Omnifinity at a Glance</h1>
+            <h1 className="text-center mb-2">Omnifinity at a Glance</h1>
           </div>
           <div className="col-12 col-md-6 text-center mb-2">
             <div className="HomeContentContainer d-flex text-center justify-content-center">
@@ -361,7 +361,7 @@ export default function HomePage() {
                 />
                 <h3 className="mt-3 mb-2 text-center">{each.title}</h3>
                 <p className="mt-3 mb-2 text-center">{each.description}</p>
-                <div>
+                <div style={{textAlign:"center"}}>
                   <button
                     style={{
                       background: "transparent",
