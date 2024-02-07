@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.homepage-carousel-caption-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: transparent; /* Semi-transparent background */
+  padding: 20px;
+}
+
+.HomePageTotalContainer {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.HomePageVideoContainer {
+  position: relative;
+  background: greenDark;
+}
+
+.HomePagevideoElement {
+  width: 100%;
+  height: 300px; /* Adjust this value based on your requirements */
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+.HomeActive {
+  border-radius: 16px;
+  background: #0f4494;
+  color: white;
+}
+.HomeInactive {
+  color: blue;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.HomeContentContainer {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+  min-height: 200px;
+}
+.HomeContentContainer.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.HomecardsContainer {
+  background: #fff;
+  border: 0.5px solid #fff;
+}
