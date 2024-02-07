@@ -1,15 +1,22 @@
-import AdminLogin from './AdminComponent/adminLogin';
-import AdminRegistration from './AdminComponent/adminRegister';
-import SuperadminVerify from './AdminComponent/adminVerify';
-import './App.css';
+
+
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
-    <div className="App">
-     {/* <AdminRegistration/> */}
-     {/* <SuperadminVerify/> */}
-     {/* <AdminLogin/> */}
-    </div>
+    <>
+      <Routes>
+        <Route path="/about-us" element={<AboutUs />} />
+
+ <Route exact path="/" Component={HomePage} />
+
+      </Routes>
+    </>
+
+
   );
 }
 
