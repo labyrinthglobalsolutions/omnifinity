@@ -6,6 +6,7 @@ import cors from "cors";
 import addWwwToUrl from "./utils/urls.js";
 import connectDB from "./Database/db.js";
 import AdminRouter from "./Routes/adminRoutes.js";
+import BannerRouter from "./Routes/bannerRoutes.js";
 
 //config
 dotenv.config();
@@ -18,6 +19,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 console.log("setting cors origins to: " + allowedOrigins);
 connectDB();
+// Serve static files (images) from the 'uploads/banners' directory
+app.use('/uploads/banners', express.static('uploads/banners'));
+
 app.use(
   cors({
     origin: allowedOrigins,
@@ -26,7 +30,8 @@ app.use(
 );
 app.use(
   "/api/v1",
-  AdminRouter
+  AdminRouter,
+BannerRouter
 );
 // Define a simple route
 app.get("/", (req, res) => {
