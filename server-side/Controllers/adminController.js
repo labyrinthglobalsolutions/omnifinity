@@ -62,9 +62,7 @@ function sendResetPasswordEmail(email, resetToken) {
 // Route for super admin registration
 export const AdminRegistration = CatchAsyncError(async (req, res) => {
   try {
-    const { name, email, password } = req.body;
-    const username = name;
-
+    const { username, email, password } = req.body;
     const existingUser = await AdminModel.findOne({
       $or: [{ username }, { email }],
     });
