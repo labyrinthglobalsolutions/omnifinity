@@ -104,14 +104,16 @@ const AboutUs = () => {
   return (
     <div className="aboutus-main-container">
       <div className="aboutus-first-container">
+        <div className="aboutus-background"></div>
         <div className="aboutus-first-text-container">
           <h1 className="aboutus-heading">Where Data Ignites Transformation</h1>
           <p className="aboutus-description">
             Orchestrating Data-Driven Innovation with Mendix, Polarion, and
             Oracle Cloud
-          </p>{" "}
+          </p>
         </div>
       </div>
+
       <div className="aboutus-second-container">
         <div className="aboutus-second-text-container">
           <h2 className="aboutus-second-heading">About Us</h2>
