@@ -1,7 +1,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Footer.css";
-import Scroll from "../Scroll/Scroll.js"
+import Scroll from "../Scroll/Scroll.js";
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -9,7 +9,10 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="totalFooterContainer p-2" style={{background:"rgba(12, 83, 148, 1.0)",color:"#ffffff"}}>
+    <div
+      className="totalFooterContainer p-2"
+      style={{ background: "rgba(12, 83, 148, 1.0)", color: "#ffffff" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-3 mt-3 p-3">
@@ -76,6 +79,10 @@ export default function Footer() {
               <li className="mt-2 mb-2">MANAGED CLOUD</li>
               <li className="mt-2 mb-2">STAFF AUGMENTATION</li>
             </ul>
+          </div>
+          <div className="col-12 text-center">
+            © 2024 Omnifinity. All Rights Reserved Designed & Developed
+            with by<br /> <a href="https://labyrinthglobalsolutions.com/"> Labyrinth Global Solutions </a>
           </div>
           <div className="col-12">
             <Scroll />
