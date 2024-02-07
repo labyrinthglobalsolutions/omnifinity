@@ -1,0 +1,35 @@
+/* ScrollToTopButton.css */
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 95%;
+    /* background-color: #0f5ceb; */
+    background:#1c0345;
+    color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s, background-color 0.3s;
+    z-index: 999;
+  }
+  
+  .scroll-to-top-button:hover {
+    opacity: 1;
+    background-color: #2e3526;
+  }
+  @media screen and (max-width: 767px) {
+    /* Adjust the button size and position for smaller screens */
+    .scroll-to-top-button {
+      width: 35px;
+      height: 35px;
+      bottom: 10px;
+      right: 88%;
+      font-size: 20px; /* Adjust icon size */
+    }
+  }
+  
