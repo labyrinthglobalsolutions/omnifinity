@@ -14,7 +14,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/about-us" element={<AboutUs />} />
-
         <Route exact path="/" Component={HomePage} />
         <Route path="/adminregister" element={<AdminRegistration />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />
