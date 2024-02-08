@@ -39,6 +39,9 @@
   background: transparent;
   cursor: pointer;
 }
+.HomeInactive:hover{
+  background-color: none !important;
+}
 
 .HomeContentContainer {
   position: relative;

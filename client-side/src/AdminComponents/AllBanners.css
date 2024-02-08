@@ -72,16 +72,16 @@
 }
 
 /* Additional styling for form elements */
-form {
+/* form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
-label {
+/* label {
   font-weight: bold;
   margin-bottom: 5px;
-}
+} */
 
 input,
 textarea {
@@ -93,15 +93,15 @@ textarea {
 }
 
 button {
-  background-color: #007bff;
+  /* background-color: #007bff; */
   color: #fff;
-  padding: 10px;
+  /* padding: 10px; */
   border: none;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: pointer;
   font-size: 16px;
 }
-
+/* 
 button:hover {
   background-color: #0056b3;
-}
+} */
