@@ -4,7 +4,7 @@ import Contact2 from "../Images/contact2.webp";
 import Contact3 from "../Images/contact3.webp";
 import Contact4 from "../Images/conatct4.webp";
 import ReCAPTCHA from "react-google-recaptcha";
-import Footer from "../Footer/Footer"
+// import Footer from "../Footer/Footer"
 import "./Contact.css";
 const TEST_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
 
@@ -79,13 +79,13 @@ export default function Contact() {
                           <h3 style={{ color: "#ffffff" }}>Get in touch!</h3>
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label htmlFor="email" className="text-left">
+                          <label htmlFor="email" className="text-left" style={{fontWeight:"normal"}}>
                             Email <span style={{ color: "red" }}>*</span>
                           </label>
                           <input id="email" type="text" className="w-100" />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label htmlFor="phoneNumber" className="text-left">
+                          <label htmlFor="phoneNumber" className="text-left" style={{fontWeight:"normal"}}>
                             phoneNumber <span style={{ color: "red" }}>*</span>
                           </label>
                           <input
@@ -95,19 +95,19 @@ export default function Contact() {
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label className="text-left" htmlFor="firstName">
+                          <label className="text-left" htmlFor="firstName" style={{fontWeight:"normal"}}>
                             first name
                           </label>
                           <input type="text" id="firstName" className="w-100" />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label htmlFor="lastName" className="text-left">
+                          <label htmlFor="lastName" className="text-left" style={{fontWeight:"normal"}}>
                             last name
                           </label>
                           <input id="lastName" type="text" className="w-100" />
                         </div>
-                        <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label className="text-left" htmlFor="companyName">
+                        <div className="p-2 mt-3 mb-3 col-md-6" style={{fontWeight:"normal"}}>
+                          <label className="text-left" htmlFor="companyName" style={{fontWeight:"normal"}}>
                             Company name
                           </label>
                           <input
@@ -117,7 +117,7 @@ export default function Contact() {
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label className="text-left" htmlFor="CountryRegion">
+                          <label className="text-left" htmlFor="CountryRegion" style={{fontWeight:"normal"}}>
                             Country/Region
                           </label>
                           <input
@@ -127,7 +127,7 @@ export default function Contact() {
                           />
                         </div>
                         <div className="col-12">
-                          <label className="text-left" htmlFor="message">
+                          <label className="text-left" htmlFor="message" style={{fontWeight:"normal"}}>
                             Message
                           </label>
                           <textarea
@@ -173,7 +173,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
