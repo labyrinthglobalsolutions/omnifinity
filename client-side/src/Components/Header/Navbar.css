@@ -178,7 +178,7 @@ nav {
 }
 
 .enter-prise-menu {
-  width: 10rem;
+  width: 15rem;
   display: block;
   position: absolute;
   border-radius: 10px;
@@ -213,14 +213,14 @@ nav {
 
 .sub-menu li:hover > .enter-prise-menu {
   top: 0.4rem;
-  left: 12.04rem;
+  left: 12.06rem;
   opacity: 1;
-  width: 10rem;
+  width: 15rem;
   visibility: visible;
 }
 
 .innovation-menu {
-  width: 10rem;
+  width: 15rem;
   display: block;
   position: absolute;
   border-radius: 10px;
@@ -255,14 +255,14 @@ nav {
 
 .sub-menu li:hover > .innovation-menu {
   top: 2.5rem;
-  left: 12.04rem;
+  left: 12.06rem;
   opacity: 1;
-  width: 10rem;
+  width: 15rem;
   visibility: visible;
 }
 
 .managed-menu {
-  width: 10rem;
+  width: 15rem;
   display: block;
   position: absolute;
   border-radius: 10px;
@@ -297,9 +297,9 @@ nav {
 
 .sub-menu li:hover > .managed-menu {
   top: 4.6rem;
-  left: 12.04rem;
+  left: 12.06rem;
   opacity: 1;
-  width: 10rem;
+  width: 15rem;
   visibility: visible;
 }
 
