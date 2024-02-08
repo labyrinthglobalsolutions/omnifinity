@@ -1,54 +1,54 @@
 .all-banners-container {
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .banners-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .banner-item {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .banner-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .banner-details {
-    margin-top: 10px;
-  }
-  
-  .banner-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .banner-description {
-    font-size: 1rem;
-  }
-  
-  .button-container {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .button-container button {
-    padding: 8px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-  }
-  /* AllBanners.css */
+  max-width: 800px;
+  margin: auto;
+}
+
+.banners-list {
+  list-style: none;
+  padding: 0;
+}
+
+.banner-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.banner-details {
+  margin-top: 10px;
+}
+
+.banner-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner-description {
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-container button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+/* AllBanners.css */
 
 .modal-content {
   background-color: #ffffff;
@@ -73,16 +73,18 @@
 
 /* Additional styling for form elements */
 .update-form {
+  /* form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+} */
 }
-
 .update-form label {
+  /* label {
   font-weight: bold;
   margin-bottom: 5px;
+} */
 }
-
 .update-form input,
 textarea {
   width: 100%;
@@ -94,14 +96,20 @@ textarea {
 
 .update-button {
   background-color: #007bff;
+}
+button {
+  /* background-color: #007bff; */
   color: #fff;
-  padding: 10px;
+  /* padding: 10px; */
   border: none;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: pointer;
   font-size: 16px;
 }
 
 .update-button:hover {
-  background-color: #0056b3;
 }
+/* 
+button:hover {
+  background-color: #0056b3;
+} */
