@@ -9,6 +9,11 @@ import AdminLogin from './AdminComponents/adminLogin';
 import AdminPannel from './AdminComponents/adminPanel';
 import Contact from './Components/ContactUs/Contact';
 import Footer from './Components/Footer/Footer';
+import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
+
+import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
+import ManagedServices from "./Components/Services/ManagedServices/ManagedServices";
+
 
 function App() {
   const location = useLocation();
@@ -23,6 +28,9 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
         <Route path="/adminregister" element={<AdminRegistration />} />
+        <Route path="/innovation-solutions" element={<InnovationSolutions />} />
+        <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
+        <Route path="/managed-services" element={<ManagedServices />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/contactUs" element={<Contact />} />

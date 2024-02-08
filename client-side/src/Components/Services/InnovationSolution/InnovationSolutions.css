@@ -1,0 +1,125 @@
+.innovation-solutions-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.innovation-solutions-first-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.innovation-solutions-bg-container {
+  background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovation-Solutions-1920x540-px.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  background-size: cover;
+  background-position: center;
+}
+.innovation-solutions-bg-sub-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.innovation-solutions-bg-heading {
+  color: #fff;
+  font-size: 50px;
+  margin: 0px;
+}
+.innovation-solutions-bg-sub-heading {
+  color: #fff;
+  font-size: 24px;
+  margin: 0px;
+}
+.innovation-solutions-second-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.innovation-solutions-main-description {
+  margin: 20px;
+  width: 80%;
+  line-height: 2rem;
+}
+.innovation-solutions-card-main-heading {
+  font-size: 43px;
+  color: #000;
+  margin: 0px 0px 23px;
+  text-align: center;
+  width: 70%;
+  font-weight: 700;
+}
+
+.innovation-solutions-card-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.innovation-solutions-card-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 2%;
+  gap: 7%;
+  width: 80%;
+}
+.innovation-solutions-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 28%;
+  padding: 30px;
+}
+.innovation-solutions-card-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.innovation-solutions-card-image {
+  width: 150px;
+  height: 150px;
+}
+.innovation-solutions-card-heading {
+  font-size: 24px;
+  color: #134391;
+  font-weight: 400;
+  margin: 0px;
+  font-style: normal;
+  text-align: center;
+}
+.innovation-solutions-card-description {
+  font-size: 16px;
+  color: #444444;
+  margin: 0px;
+  line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .innovation-solutions-card-container {
+    width: 45%;
+  }
+}
+@media (max-width: 512px) {
+  .innovation-solutions-card-container {
+    width: 95%;
+  }
+}
