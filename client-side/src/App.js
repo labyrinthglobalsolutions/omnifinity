@@ -38,6 +38,7 @@ import AdminEmailVerify from './AdminComponents/adminEmailVerify';
 import AdminLogin from './AdminComponents/adminLogin';
 import AllBanners from './AdminComponents/allBanners';
 import AdminPannel from './AdminComponents/adminPanel';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const location = useLocation();
@@ -51,11 +52,14 @@ function App() {
       <Routes>
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
+        
         <Route path="/adminRegister" element={<AdminRegistration />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/adminDashboard/*" element={<AdminPannel />} />
+
       </Routes>
+      <Footer/>
     </>
   );
 }

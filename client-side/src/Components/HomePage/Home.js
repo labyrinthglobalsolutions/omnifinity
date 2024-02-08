@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Footer from "../Footer/Footer.js";
+// import Footer from "../Footer/Footer.js";
 import { Carousel } from "react-bootstrap";
 import Player from "../Videos/pexels-tima-miroshnichenko-5377697 (2160p).mp4";
 import { IoHome } from "react-icons/io5";
@@ -134,7 +134,7 @@ export default function HomePage() {
   ];
 
   const filtered = Details.filter((each) => each.category === state);
-  console.log(filtered);
+ 
 
   return (
     <div className="HomePageTotalContainer">
@@ -379,7 +379,7 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
