@@ -172,7 +172,7 @@ function AllBanners() {
             onChange={(e) => setUpdatedData({ ...updatedData, image: e.target.files[0] })}
           />
 
-          <button type="button" onClick={handleUpdate}>
+  <button className='update-button' type="button" onClick={handleUpdate}>
             Update
           </button>
         </form>
