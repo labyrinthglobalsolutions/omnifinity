@@ -50,60 +50,50 @@ const Navbar = () => {
                 Services <FaCaretDown />
               </Link>
               <ul className="sub-menu">
-                <Link to="#" className="sub-menu-list-item">
+                <Link to="/enterprise-systems" className="sub-menu-list-item">
                   <li>
                     Enterprise Systems
                     <ul className="enter-prise-menu">
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Cara Cara</li>
+                        <li>SAP S/4 HANA</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Tangerine</li>
+                        <li>SAP Business ByDesign</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Others</li>
+                        <li>SAP Business One</li>
+                      </Link>
+                      <Link to="#" className="sub-menu-list-item">
+                        <li>SAP Customer Checkout</li>
+                      </Link>
+                      <Link to="#" className="sub-menu-list-item">
+                        <li>SAP Ariba</li>
                       </Link>
                     </ul>
                     <FaCaretRight />
                   </li>
                 </Link>
-                <Link to="#" className="sub-menu-list-item">
+                <Link to="/innovation-solutions" className="sub-menu-list-item">
                   <li>
                     Innovation Solutions
                     <ul className="innovation-menu">
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Cara Cara</li>
+                        <li>Analytics & BI</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Tangerine</li>
+                        <li>Digital Identity</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
-                        <li>
-                          Others
-                          {/* <ul className="sub-menu">
-                      <li>
-                        <Link to="#" className="nav-link-item">
-                          Lima
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#" className="nav-link-item">
-                          Seville
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#" className="nav-link-item">
-                          Lime
-                        </Link>
-                      </li>
-                    </ul> */}
-                        </li>
+                        <li>Application Development</li>
+                      </Link>
+                      <Link to="#" className="sub-menu-list-item">
+                        <li>Digital Financial Services</li>
                       </Link>
                     </ul>
                     <FaCaretRight />
                   </li>
                 </Link>
-                <Link to="#" className="sub-menu-list-item">
+                <Link to="/managed-services" className="sub-menu-list-item">
                   <li>
                     Managed Services
                     <ul className="managed-menu">

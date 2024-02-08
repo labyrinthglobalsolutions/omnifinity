@@ -1,0 +1,145 @@
+.enterprise-systems-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.enterprise-systems-first-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.enterprise-systems-bg-container {
+  background-image: url("../../../images/Enterprise/enterpriseSystemsbg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  background-size: cover;
+  background-position: center;
+}
+.enterprise-systems-bg-sub-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.enterprise-systems-bg-heading {
+  color: #fff;
+  font-size: 50px;
+  margin: 0px;
+}
+.enterprise-systems-bg-sub-heading {
+  color: #fff;
+  font-size: 24px;
+  margin: 0px;
+}
+.enterprise-systems-second-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enterprise-systems-main-description {
+  margin: 20px;
+  width: 80%;
+  line-height: 2rem;
+}
+.enterprise-systems-card-main-heading {
+  font-size: 43px;
+  color: #000;
+  margin: 0px 0px 23px;
+  text-align: center;
+  width: 70%;
+  font-weight: 700;
+}
+
+.enterprise-systems-card-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.enterprise-systems-card-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 2%;
+  gap: 7%;
+  width: 80%;
+}
+.enterprise-systems-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 28%;
+  padding: 30px;
+}
+.enterprise-systems-card-container:hover {
+  box-shadow: 0 43px 70px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.enterprise-systems-card-image {
+  max-width: 100%;
+  height: auto;
+}
+.enterprise-systems-card-heading {
+  font-size: 24px;
+  color: #134391;
+  font-weight: 400;
+  margin: 0px;
+  font-style: normal;
+  text-align: center;
+}
+.enterprise-systems-card-description {
+  font-size: 16px;
+  color: #444444;
+  margin: 0px;
+  line-height: 2rem;
+}
+
+.enterprise-systems-third-container {
+  width: 100%;
+  margin: 40px 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.enterprise-systems-btn {
+  background-color: #0f4494;
+  border: 1px solid #0f4494;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+
+  width: 150px;
+  padding: 18px 26px;
+}
+
+@media (max-width: 768px) {
+  .enterprise-systems-card-container {
+    width: 45%;
+  }
+}
+@media (max-width: 512px) {
+  .enterprise-systems-card-container {
+    width: 95%;
+  }
+}
