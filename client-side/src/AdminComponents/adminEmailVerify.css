@@ -1,0 +1,58 @@
+.super-admin-verify-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .super-admin-verify-form-container {
+    width: 32%;
+    box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffff40;
+    border-radius: 15px;
+    padding: 30px;
+  }
+  .super-admin-verify-input-contaier {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .super-admin-verify-label-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .super-admin-verify-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid#212d45;
+    border-radius: 7px;
+  }
+  .super-admin-verify-button {
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    padding: 8px 20px;
+    border: 3px #4f46e5 solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  .super-admin-verify-button:hover {
+    border: 3px #4f46e5 solid;
+    color: white;
+    background-color: #4f46e5;
+    transition: 0.3s ease-in-out;
+  }
+  @media screen and (max-width: 570px) {
+    .super-admin-verify-form-container {
+      width: 80%;
+    }
+  }
+  @media screen and (min-width: 571px) and (max-width: 900px) {
+    .super-admin-verify-form-container {
+      width: 70%;
+    }
+  }

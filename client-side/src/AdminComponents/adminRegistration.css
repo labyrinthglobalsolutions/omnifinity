@@ -1,0 +1,75 @@
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 50vh;
+    margin-left: 40%;
+    height: 90vh;
+    margin-top: 30px;
+    border: 4px dashed #7a1515;
+
+}
+.registration-container h1{
+    color: rgb(19, 19, 14);
+}
+ 
+.form-container {
+    width: 300px; /* Adjust the width as needed */
+}
+ 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center */
+}
+ 
+.form-group input,
+.form-group label {
+    border-radius: 20px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+ 
+.form-group label {
+color: rgb(19, 19, 37);
+    text-align: left; /* Align labels to the left */
+    width: 100%; /* Make the width 100% to prevent overlapping */
+}
+.btn-primary{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(124, 187, 24);
+    color: black;
+    width: 69%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.btn-primary:hover{
+    background-color: rgb(136, 187, 136);
+    color: rgb(41, 19, 19);
+    border: 1px solid rgb(255, 255, 255);
+}
+.toggle-container {
+    position: absolute;
+    top: 30px;
+    right: 36%;
+background-color: rgb(175, 172, 153);
+    cursor: pointer;
+    border-radius: 20px;
+ 
+ 
+}
