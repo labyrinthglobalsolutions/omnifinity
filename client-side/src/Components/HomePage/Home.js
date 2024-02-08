@@ -213,8 +213,8 @@ export default function HomePage() {
                 <div className="col-12 col-md-6  d-flex flex-column justify-content-center text-center">
                   <h1 className="text-primary">{filtered[0].title}</h1>
                   <p>{filtered[0].description}</p>
-                  <div>
-                    <button className="btn btn-primary">Learn More</button>
+                  <div className="text-center  w-100 d-flex justify-content-center">
+                    <button className="btn btn-primary" id="homeButton">Learn More</button>
                   </div>
                 </div>
                 <div className="col-12 col-md-6  d-flex justify-content-center text-center">
