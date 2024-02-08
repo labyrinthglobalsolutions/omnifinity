@@ -55,3 +55,16 @@
   background: #fff;
   border: 0.5px solid #fff;
 }
+
+#homeButton{
+  height:45px;
+  width:150px;
+  border-radius:8px;
+  color:#ffffff;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0b24de;
+  font-weight:bold;
+}
