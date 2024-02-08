@@ -224,7 +224,7 @@ nav {
   display: block;
   position: absolute;
   border-radius: 10px;
-  background-color: rgb(235, 172, 172);
+  background-color: white;
   color: black;
   z-index: 100;
   top: 5rem;
