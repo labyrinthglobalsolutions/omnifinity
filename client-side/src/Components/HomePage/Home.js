@@ -364,6 +364,8 @@ export default function HomePage() {
                 <div style={{textAlign:"center"}}>
                   <button
                     style={{
+                      display:"block!important",
+                      color:"black",
                       background: "transparent",
                       border: "none",
                       outline: "none",
