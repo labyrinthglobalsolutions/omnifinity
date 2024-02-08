@@ -53,11 +53,11 @@ export default function Contact() {
             <div className="col-12 col-md-3 text-center w-90 mt-3 mb-3 p-4">
               <img
                 src={each.imageUrl}
-                height="60"
-                width="60"
+                height="150"
+                width="150"
                 alt={`${index + 1}`}
               />
-              <h6 className="text-primary">{each.title}</h6>
+              <h6 className="text-primary mt-3">{each.title}</h6>
               <p className="text-secondary">{each.description}</p>
               <p className="text-secondary">{each.phone}</p>
             </div>
