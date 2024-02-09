@@ -47,30 +47,40 @@ function AddBanner() {
   };
 
   return (
-<div className="add-banner">
-      <h2>Add Banner</h2>
-      <form>
-        <label>Title:</label>
+    <div className="add-banner-container">
+      <form className="add-banner-form-container">
+        <h2 className="add-banner-heading">Add Banner</h2>
+        <div className="add-banner-input-container">
+          <label className="add-banner-label">Title</label>
+          <input
+            type="text"
+            value={title}
+            placeholder="Enter Banner Title"
+            onChange={(e) => setTitle(e.target.value)}
+            className="add-banner-input"
+          />
+        </div>
+
+        <div className="add-banner-input-container">
+          <label className="add-banner-label">Description</label>
+          <input
+            type="text"
+            placeholder="Enter Banner Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="add-banner-input"
+          />
+        </div>
+
+        <label className="add-banner-label">Image</label>
         <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          type="file"
+          onChange={handleFileChange}
+          className="add-banner-file-input"
         />
         <br />
 
-        <label>Description:</label>
-        <input
-          type="text"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <br />
-
-        <label>Image:</label>
-        <input type="file" onChange={handleFileChange} />
-        <br />
-
-        <button type="button" onClick={addBanner}>
+        <button type="button" className="add-banner-button" onClick={addBanner}>
           Add Banner
         </button>
       </form>
