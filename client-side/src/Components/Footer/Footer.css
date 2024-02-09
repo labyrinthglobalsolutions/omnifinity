@@ -162,10 +162,16 @@
     display: none;
   }
 }
-.text-content,.footerheading{
-  padding:0px;
-  line-height:1.4;
-  font-family:"PT Sans";
+.text-content,
+.footerheading {
+  padding: 0px;
+  line-height: 1.4;
+  font-family: "PT Sans";
 
-  list-style-type:none;
+  list-style-type: none;
+}
+.footerheading {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center!important;
 }
