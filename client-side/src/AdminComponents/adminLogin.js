@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './adminRegistration.css';
 const AdminLogin = () => {
   const [formData, setFormData] = useState({
@@ -73,6 +73,7 @@ navigate('/adminDashboard');
 <button type='submit' className='btn-primary' onClick={handleLogin}>
             Login
 </button>
+<Link to='/forget-password'>Forgot Password?</Link>
 </div>
 </div>
 </div>

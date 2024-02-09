@@ -10,9 +10,10 @@ import AdminPannel from './AdminComponents/adminPanel';
 import Contact from './Components/ContactUs/Contact';
 import Footer from './Components/Footer/Footer';
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
-
+import ForgetPassword from './AdminComponents/forgetPassword.js';
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
 import ManagedServices from "./Components/Services/ManagedServices/ManagedServices";
+import ResetPassword from './AdminComponents/resetPassword.js';
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/contactUs" element={<Contact />} />
         <Route path="/adminDashboard/*" element={<AdminPannel />} />
+        <Route path='forget-password' element={<ForgetPassword />} />
+        <Route path='reset-password' element={<ResetPassword />} />
       </Routes>
       <Footer />
     </>
