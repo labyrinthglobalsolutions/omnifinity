@@ -29,7 +29,7 @@ const Navbar = () => {
   };
   return (
     <div className={`navbar-container${scrolling ? " scrolling" : ""}`}>
-      <nav className={isActive ? "active" : ""}>
+      <nav className={isActive ? "active" : "nav-container"}>
         <div className="menu-icons" onClick={toggleMenu}>
           <GiHamburgerMenu />
         </div>

@@ -29,7 +29,7 @@
   /* display: none; */
 }
 
-nav {
+.nav-container {
   width: 90%;
   display: flex;
   align-items: center;
@@ -38,13 +38,13 @@ nav {
   gap: 2rem;
 }
 .navbar-logo-container {
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: flex-end;
 }
 
 .navbar-menu-container {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -82,14 +82,10 @@ nav {
   display: block;
   color: #eee;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 15px 10px;
   font-weight: 600;
   font-size: 14px;
   transition: color 650ms;
-  -webkit-transition: color 650ms;
-  -moz-transition: color 650ms;
-  -ms-transition: color 650ms;
-  -o-transition: color 650ms;
   position: relative;
   width: 100%;
   align-items: center;
@@ -149,6 +145,14 @@ nav {
   text-decoration: none;
   color: black;
 }
+
+.sub-menu-list-item:hover {
+  color: rgb(55, 168, 55);
+  border-radius: 3px;
+  background-color: #c7c7c773;
+  padding: 0px 3px;
+}
+
 .nav-list li:hover > .sub-menu {
   top: 3.2rem;
   opacity: 1;
@@ -187,10 +191,6 @@ nav {
   z-index: 100;
   top: 5rem;
   transition: all 250ms ease;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
   opacity: 0;
   visibility: hidden;
 }
@@ -215,7 +215,10 @@ nav {
   top: 0.4rem;
   left: 12.06rem;
   opacity: 1;
-  width: 15rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 13rem;
   visibility: visible;
 }
 
