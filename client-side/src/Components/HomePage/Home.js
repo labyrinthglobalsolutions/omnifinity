@@ -40,7 +40,6 @@ export default function HomePage() {
     }
   };
 
-
   const settings = {
     dots: false,
     prevArrow: <BsArrowLeft size="30" color="black" />, // Replace CustomPrevArrow and CustomNextArrow with your own arrow components
@@ -51,6 +50,20 @@ export default function HomePage() {
     slidesToScroll: 4,
   };
   const images = [image1, image2, image3, image];
+
+  const [HomeImages1, setCards] = useState([]);
+
+  const getCards = async () => {
+    const options = {
+      method: "GET",
+    };
+    const response = await fetch(`${process.env.FETCH_URL}getbanner`, options);
+    console.log(response);
+  };
+
+  useEffect(() => {
+    getCards();
+  });
 
   const HomeCards = [
     {
@@ -134,7 +147,6 @@ export default function HomePage() {
   ];
 
   const filtered = Details.filter((each) => each.category === state);
- 
 
   return (
     <div className="HomePageTotalContainer">
@@ -214,7 +226,9 @@ export default function HomePage() {
                   <h1 className="text-primary">{filtered[0].title}</h1>
                   <p>{filtered[0].description}</p>
                   <div className="text-center  w-100 d-flex justify-content-center">
-                    <button className="btn btn-primary" id="homeButton">Learn More</button>
+                    <button className="btn btn-primary" id="homeButton">
+                      Learn More
+                    </button>
                   </div>
                 </div>
                 <div className="col-12 col-md-6  d-flex justify-content-center text-center">
@@ -353,7 +367,7 @@ export default function HomePage() {
           </div>
           {HomeCards.map((each) => (
             <div className="col-12 col-md-4">
-              <div className="HomecardsContainer  shadow HomeContentContainer mb-2 p-2">
+              <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
                 <img
                   src={each.imageUrl}
                   style={{ height: "200px", borderRadius: "8px", width: "90%" }}
@@ -361,11 +375,11 @@ export default function HomePage() {
                 />
                 <h3 className="mt-3 mb-2 text-center">{each.title}</h3>
                 <p className="mt-3 mb-2 text-center">{each.description}</p>
-                <div style={{textAlign:"center"}}>
+                <div style={{ textAlign: "center" }}>
                   <button
                     style={{
-                      display:"block!important",
-                      color:"black",
+                      display: "block!important",
+                      color: "black",
                       background: "transparent",
                       border: "none",
                       outline: "none",

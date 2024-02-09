@@ -15,8 +15,13 @@ export default function Footer() {
     >
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-3 mt-3 p-3">
-            <h1 className="mt-2 mb-2 footerheading  text-center">Omnifinity</h1>
+          <div className="col-12 col-md-3 mt-3 p-3 text-center">
+            <h1
+              className="mt-2 w-100  mb-2 footerheading"
+              style={{ textAlign: "center!important" }}
+            >
+              Omnifinity
+            </h1>
 
             <div className="footer-social-media-icons-main-container">
               <div className="contact-page-social-icon-container contact-page-facebook-container">
@@ -81,8 +86,12 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-12 text-center">
-            © 2024 Omnifinity. All Rights Reserved Designed & Developed
-            with by<br /> <a href="https://labyrinthglobalsolutions.com/"> Labyrinth Global Solutions </a>
+            © 2024 Omnifinity. All Rights Reserved Designed & Developed with by
+            <br />{" "}
+            <a href="https://labyrinthglobalsolutions.com/">
+              {" "}
+              Labyrinth Global Solutions{" "}
+            </a>
           </div>
           <div className="col-12">
             <Scroll />
