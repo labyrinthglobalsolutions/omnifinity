@@ -16,7 +16,9 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-3 mt-3 p-3 text-center">
+
             <h1 className="mt-2 mb-2 footerheading  text-center">Omnifinity</h1>
+
 
             <div className="footer-social-media-icons-main-container">
               <div className="contact-page-social-icon-container contact-page-facebook-container">

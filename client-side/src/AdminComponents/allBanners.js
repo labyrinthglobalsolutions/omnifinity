@@ -164,6 +164,7 @@ function AllBanners() {
         className="modal-content" // Custom modal content class
         overlayClassName="modal-overlay" // Custom modal overlay class
       >
+
         <form className="update-banner-form-container">
           <h2 className="add-banner-heading">Update Banner</h2>
           <div className="add-banner-input-container">
@@ -207,6 +208,7 @@ function AllBanners() {
             type="button"
             onClick={handleUpdate}
           >
+
             Update
           </button>
         </form>

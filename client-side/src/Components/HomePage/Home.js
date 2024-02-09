@@ -350,7 +350,7 @@ export default function HomePage() {
           </div>
           {HomeCards.map((each) => (
             <div className="col-12 col-md-4">
-              <div className="HomecardsContainer  shadow HomeContentContainer mb-2 p-2">
+              <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
                 <img
                   src={each.imageUrl}
                   style={{ height: "200px", borderRadius: "8px", width: "90%" }}
