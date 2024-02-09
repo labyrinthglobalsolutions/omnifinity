@@ -151,7 +151,7 @@ function AllBanners() {
         overlayClassName="modal-overlay" // Custom modal overlay class
       >
         <h2>Update Banner</h2>
-        <form>
+    <form className='update-form'>
           <label>Title:</label>
           <input
             type="text"
