@@ -180,7 +180,7 @@ export const requestPasswordReset = CatchAsyncError(async (req, res) => {
     // Send the reset link to the user's email using nodemailer
     sendResetPasswordEmail(email, resetToken);
     res.status(200).json({
-      message: "Password reset link sent to your email",
+      message: "Password reset code sent to your email",
       resetToken,
     });
   } catch (error) {
