@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./addBanner.css";
+import "../addBanner.css";
 
-function AddBanner() {
+function AddService() {
   const [title, setTitle] = useState("");
   const [slogan, setSlogan] = useState("");
   const [description, setDescription] = useState("");
@@ -27,7 +27,7 @@ function AddBanner() {
       formData.append("description", description);
       formData.append("image", image);
 
-      const response = await fetch("http://localhost:4000/api/v1/addbanner", {
+      const response = await fetch("http://localhost:4000/api/v1/addservice", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -38,7 +38,7 @@ function AddBanner() {
       if (!response.ok) {
         throw new Error("Failed to add banner");
       }
-      alert("Banner Added successfully");
+      alert("Service Added successfully");
       setDescription("");
       setTitle("");
       setImage(null);
@@ -59,7 +59,13 @@ function AddBanner() {
           onChange={(e) => setTitle(e.target.value)}
         />
         <br />
-
+        <label>slogan:</label>
+        <input
+          type="text"
+          value={slogan}
+          onChange={(e) => setSlogan(e.target.value)}
+        />
+        <br />
         <label>Description:</label>
         <input
           type="text"
@@ -80,4 +86,4 @@ function AddBanner() {
   );
 }
 
-export default AddBanner;
+export default AddService;
