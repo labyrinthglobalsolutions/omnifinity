@@ -10,25 +10,6 @@
   background-color: rgba(73, 74, 82, 1);
 }
 
-.menu-icons {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  color: #eee;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 1500;
-  /* display: none; */
-}
-
 .nav-container {
   width: 90%;
   display: flex;
@@ -93,26 +74,6 @@
 
 .nav-link-item:hover {
   color: rgb(197, 209, 215);
-}
-
-.btn {
-  padding: 1.3rem;
-  display: inline-block;
-  border: 2px solid var(--main-color);
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  transition: background-color 650ms;
-  -webkit-transition: background-color 650ms;
-  -moz-transition: background-color 650ms;
-  -ms-transition: background-color 650ms;
-  -o-transition: background-color 650ms;
-}
-
-.btn:hover {
-  color: var(--main-color);
 }
 
 .sub-menu {
@@ -310,24 +271,65 @@ li.move-right {
   margin: auto 0 auto auto;
   line-height: initial;
 }
+.menu-icons {
+  display: none;
+}
 
 @media screen and (max-width: 900px) {
+  .active .nav-list {
+    display: flex;
+  }
+
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-logo-container {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-menu-container {
+    width: 1px;
+  }
+
+  .logo {
+    margin-right: 0px;
+  }
+
+  .menu-icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    color: white;
+    font-size: 28px;
+  }
   .nav-list {
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
-    height: 100vh;
+    height: max-content;
     flex-direction: column;
     background-color: #191919;
+    justify-content: space-between;
     z-index: 1000;
     align-items: initial;
     display: none;
-    overflow-y: scroll;
+    padding: 0px;
+
     width: 100%;
   }
 
-  .nav-list > li {
-    line-height: 6rem;
+  .nav-list-item {
+    max-height: max-content;
+  }
+  .nav-list li:hover > .sub-menu {
+    top: 3.2rem;
+    opacity: 1;
+    width: 10rem;
+    visibility: visible;
   }
 
   .sub-menu {
@@ -335,10 +337,19 @@ li.move-right {
     border: 3px solid transparent;
     margin-left: 1rem;
     max-height: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
     overflow: hidden;
     margin-right: 0.4rem;
-    padding-right: 1rem;
+    color: #191919;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 8px;
+  }
+
+  .sub-menu .sub-menu-list-item {
+    padding: 2px;
+    font-size: 12.5px;
+    max-height: max-content;
   }
 
   .sub-menu .sub-menu {
@@ -348,7 +359,12 @@ li.move-right {
   }
 
   .sub-menu::before {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+    border: 1.2rem solid transparent;
+    border-bottom: 1.2rem solid var(--main-color);
   }
 
   .nav-list li:hover > .sub-menu {
@@ -357,28 +373,37 @@ li.move-right {
     max-height: initial;
   }
 
+  .sub-menu li:hover > .enter-prise-menu {
+    top: 7.4rem;
+    left: 10.6rem;
+    opacity: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 11rem;
+    visibility: visible;
+  }
+
+  .sub-menu li:hover > .innovation-menu {
+    top: 9.3rem;
+    left: 10.6rem;
+    opacity: 1;
+    width: 11rem;
+    padding: 7px;
+    visibility: visible;
+  }
+
+  .sub-menu li:hover > .managed-menu {
+    top: 11.4rem;
+    left: 10.6rem;
+    opacity: 1;
+    width: 10rem;
+    visibility: visible;
+    padding: 5px 10px;
+  }
+
   li.move-right {
     margin: 0 auto 0 0;
     line-height: initial;
-  }
-
-  .menu-icons {
-    display: block;
-  }
-
-  .fa-times {
-    display: none;
-  }
-
-  nav.active .fa-times {
-    display: block;
-  }
-
-  nav.active .fa-bars {
-    display: none;
-  }
-
-  nav.active .nav-list {
-    display: flex;
   }
 }
