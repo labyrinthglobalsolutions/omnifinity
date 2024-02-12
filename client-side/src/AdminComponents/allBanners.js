@@ -34,6 +34,7 @@ function AllBanners() {
 
       const data = await response.json();
       setBanners(data);
+      
     } catch (error) {
       console.error('Error fetching banners:', error.message);
     }
