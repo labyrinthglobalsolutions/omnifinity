@@ -82,7 +82,7 @@ export default function Contact() {
                           <label htmlFor="email" className="text-left" style={{fontWeight:"normal"}}>
                             Email <span style={{ color: "red" }}>*</span>
                           </label>
-                          <input id="email" type="text" className="w-100" />
+                          <input  id="email" type="text" className="w-100" />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
                           <label htmlFor="phoneNumber" className="text-left" style={{fontWeight:"normal"}}>
