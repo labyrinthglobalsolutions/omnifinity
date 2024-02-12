@@ -6,7 +6,7 @@ import { IoLogOut } from "react-icons/io5";
 import { MdAddTask } from "react-icons/md";
 
 import { useEffect, useState } from "react";
-import { PiUserListBold, PiUserCirclePlusBold } from "react-icons/pi";
+
 import "./adminpanel.css";
 import { useNavigate } from "react-router-dom";
 import AllBanners from "./allBanners";
@@ -16,28 +16,14 @@ import AllServices from "./services/getServices";
 
 function AdminPannel() {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [active, setActive] = useState("allprojects");
+  const [active, setActive] = useState("allBanners");
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Remove cookies here
     sessionStorage.removeItem("role");
     sessionStorage.removeItem("token");
-
-    // Navigate to login page
     navigate("/adminLogin");
   };
-  const token = sessionStorage.getItem("token");
-
-  const navigateCreate = () => {
-    setActive("addBanner");
-  };
-
-  const navigateEmployeeCreate = () => {
-    setActive("updateBanner");
-  };
-
- 
 
   return (
     <div

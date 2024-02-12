@@ -17,3 +17,14 @@ code {
   margin: 0;
   padding: 0;
 }
+
+.omnifinity-button {
+  height: auto;
+  width: auto;
+  padding: 20px 35px;
+  background-color: #0f4494;
+  border: 1px solid #0f4494;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 17px;
+}

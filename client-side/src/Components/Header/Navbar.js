@@ -29,7 +29,7 @@ const Navbar = () => {
   };
   return (
     <div className={`navbar-container${scrolling ? " scrolling" : ""}`}>
-      <nav className={isActive ? "active" : ""}>
+      <nav className={isActive ? "active" : "nav-container"}>
         <div className="menu-icons" onClick={toggleMenu}>
           <GiHamburgerMenu />
         </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
                   <li>
                     Enterprise Systems
                     <ul className="enter-prise-menu">
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link to="/sap-hana" className="sub-menu-list-item">
                         <li>SAP S/4 HANA</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
@@ -98,13 +98,13 @@ const Navbar = () => {
                     Managed Services
                     <ul className="managed-menu">
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Cara Cara</li>
+                        <li>Managed Cloud</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Tangerine</li>
+                        <li>DevOps</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
-                        <li>Others</li>
+                        <li>Staff Augmentation</li>
                       </Link>
                     </ul>
                     <FaCaretRight />

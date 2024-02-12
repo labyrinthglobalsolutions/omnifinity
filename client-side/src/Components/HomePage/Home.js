@@ -40,7 +40,6 @@ export default function HomePage() {
     }
   };
 
-
   const settings = {
     dots: false,
     prevArrow: <BsArrowLeft size="30" color="black" />, // Replace CustomPrevArrow and CustomNextArrow with your own arrow components
@@ -51,6 +50,29 @@ export default function HomePage() {
     slidesToScroll: 4,
   };
   const images = [image1, image2, image3, image];
+
+  const [HomeImages, setCards] = useState([]);
+
+  const getBannerImages = async () => {
+    try {
+      const options = {
+        method: "GET",
+      };
+      const response = await fetch(
+        `${process.env.REACT_APP_FETCH_URL}/getbanner`,
+        options
+      );
+      const data = await response.json();
+      console.log(data);
+      setCards(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getBannerImages();
+  }, []);
 
   const HomeCards = [
     {
@@ -106,35 +128,8 @@ export default function HomePage() {
         "A repertoire of managed services designed to continually support management, extension and operations of enterprise systems and innovation solutions.",
     },
   ];
-  const HomeImages = [
-    {
-      src: "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/1-Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
-      alt: "Image 1",
-      title: "EMBRACE THE AI TRANSFORMATION",
-      description: "Unleashing New Business Horizons",
-    },
-    {
-      src: "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Untitled%20design%20(5).png?width=2100&name=Untitled%20design%20(5).png",
-      alt: "Image 2",
-      title: "OPERATE",
-      description: "Master Your Operations With Your Managed Services",
-    },
-    {
-      src: "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
-      alt: "Image 3",
-      title: "INNOVATE",
-      description: "Harness Cutting-Edge Frameworks for Business Innovation",
-    },
-    {
-      src: "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/digital%20core.png?width=2100&name=digital%20core.png&quot",
-      alt: "Image 4",
-      title: "BUILD DIGITAL CORE",
-      description: "Empower Your Enterprise with Unrivalled Systems",
-    },
-  ];
 
   const filtered = Details.filter((each) => each.category === state);
- 
 
   return (
     <div className="HomePageTotalContainer">
@@ -142,17 +137,17 @@ export default function HomePage() {
         <div className="row">
           <div className="col-12">
             <Carousel>
-              {HomeImages.map((image, index) => (
-                <Carousel.Item key={index}>
+              {HomeImages.map((each, index) => (
+                <Carousel.Item key={each.banner._id}>
                   <img
                     style={{ height: "500px", maxWidth: "100%" }}
                     className="d-block w-100"
-                    src={image.src}
-                    alt={image.alt}
+                    src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
+                    alt={each.banner.title}
                   />
                   <div className="homepage-carousel-caption-overlay">
-                    <h3>{image.title}</h3>
-                    <p>{image.description}</p>
+                    <h3>{each.banner.title}</h3>
+                    <p>{each.banner.description}</p>
                   </div>
                 </Carousel.Item>
               ))}
@@ -214,7 +209,9 @@ export default function HomePage() {
                   <h1 className="text-primary">{filtered[0].title}</h1>
                   <p>{filtered[0].description}</p>
                   <div className="text-center  w-100 d-flex justify-content-center">
-                    <button className="btn btn-primary" id="homeButton">Learn More</button>
+                    <button className="btn btn-primary" id="homeButton">
+                      Learn More
+                    </button>
                   </div>
                 </div>
                 <div className="col-12 col-md-6  d-flex justify-content-center text-center">
@@ -353,7 +350,7 @@ export default function HomePage() {
           </div>
           {HomeCards.map((each) => (
             <div className="col-12 col-md-4">
-              <div className="HomecardsContainer  shadow HomeContentContainer mb-2 p-2">
+              <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
                 <img
                   src={each.imageUrl}
                   style={{ height: "200px", borderRadius: "8px", width: "90%" }}
@@ -361,11 +358,11 @@ export default function HomePage() {
                 />
                 <h3 className="mt-3 mb-2 text-center">{each.title}</h3>
                 <p className="mt-3 mb-2 text-center">{each.description}</p>
-                <div style={{textAlign:"center"}}>
+                <div style={{ textAlign: "center" }}>
                   <button
                     style={{
-                      display:"block!important",
-                      color:"black",
+                      display: "block!important",
+                      color: "black",
                       background: "transparent",
                       border: "none",
                       outline: "none",
