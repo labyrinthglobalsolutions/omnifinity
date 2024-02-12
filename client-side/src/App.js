@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import ResetPassword from "./AdminComponents/resetPassword.js"
 import HomePage from "./Components/HomePage/Home";
 import Navbar from "./Components/Header/Navbar";
 import AdminRegistration from "./AdminComponents/adminSignUp";
@@ -16,7 +17,7 @@ import EnterpriseSystems from "./Components/Services/EnterpriseEdition/Enterpris
 // import ResetPassword from './AdminComponents/resetPassword.js';
 
 
-import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
+// import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
 import ManagedServices from "./Components/Services/ManagedServices/ManagedServices";
 import SapHana from "./Components/Services/EnterpriseEdition/SapHana/SapHana";
 
