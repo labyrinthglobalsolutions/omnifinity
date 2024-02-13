@@ -4,8 +4,8 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import ResetPassword from "./AdminComponents/resetPassword.js";
 import HomePage from "./Components/HomePage/Home";
 import Navbar from "./Components/Header/Navbar";
-import ResellerMendixPage from "./Components/ResellerMendixPage"
-import ResellerPolarionPage from "./Components/ResellerPolarianPage"
+import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
+import ResellerPolarionPage from "./Components/Services/ResellerPolarianPage";
 import AdminRegistration from "./AdminComponents/adminSignUp";
 import AdminEmailVerify from "./AdminComponents/adminEmailVerify";
 import AdminLogin from "./AdminComponents/adminLogin";
@@ -65,8 +65,8 @@ function App() {
         <Route path="/adminDashboard/*" element={<AdminPannel />} />
         <Route path="/forget-password" element={<ForgetPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route  path="/mendixPage" element={<ResellerMendixPage />} />
-        <Route  path="/polarionPage" element={<ResellerPolarionPage />} />
+        <Route path="/mendixPage" element={<ResellerMendixPage />} />
+        <Route path="/polarionPage" element={<ResellerPolarionPage />} />
       </Routes>
       {!isInsideAdminPanel && <Footer />}
     </>

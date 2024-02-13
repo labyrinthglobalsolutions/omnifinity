@@ -5,10 +5,6 @@
   align-items: center;
 }
 
-.container {
-  margin: 0;
-}
-
 .mendix-main-container {
   display: flex;
   justify-content: center;
