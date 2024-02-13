@@ -131,7 +131,7 @@ export const updateBanner = CatchAsyncError(async (req, res) => {
       }
     }
 
-    const updatedFields = { 'banner.title': title, 'banner.description': description };
+    const updatedFields = {  };
     if (newImage) {
       const filename = newImage.filename;
       updatedFields['banner.image'] = filename;

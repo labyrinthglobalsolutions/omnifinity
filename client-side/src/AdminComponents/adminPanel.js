@@ -11,6 +11,8 @@ import "./adminpanel.css";
 import { useNavigate } from "react-router-dom";
 import AllBanners from "./allBanners";
 import AddBanner from "./addBanner";
+import AddService from "./services/addService";
+import AllServices from "./services/getServices";
 
 function AdminPannel() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -75,6 +77,20 @@ function AdminPannel() {
           >
             Add Banner
           </MenuItem>
+          <MenuItem
+            icon={<MdAddTask />}
+            onClick={() => setActive("addService")}
+            className={active === "addService" ? "menu-active" : ""}
+          >
+            Add Service
+          </MenuItem>
+          <MenuItem
+            icon={<MdAddTask />}
+            onClick={() => setActive("allServices")}
+            className={active === "allServices" ? "menu-active" : ""}
+          >
+            All Services
+          </MenuItem>
 
           <MenuItem icon={<IoLogOut />} onClick={handleLogout}>
             LogOut
@@ -84,6 +100,8 @@ function AdminPannel() {
       <div style={{ width: "100%" }}>
         {active === "allBanners" && <AllBanners />}
         {active === "addBanner" && <AddBanner />}
+        {active === "addService" && <AddService />}
+        {active === "allServices" && <AllServices />}
       </div>
     </div>
   );

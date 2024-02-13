@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { IoCloseSharp } from "react-icons/io5";
 import { FaCaretRight, FaCaretDown } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../../images/logo.png";
@@ -29,14 +30,14 @@ const Navbar = () => {
   };
   return (
     <div className={`navbar-container${scrolling ? " scrolling" : ""}`}>
-      <nav className={isActive ? "active" : "nav-container"}>
-        <div className="menu-icons" onClick={toggleMenu}>
-          <GiHamburgerMenu />
-        </div>
+      <nav className={isActive ? "active nav-container" : "nav-container"}>
         <div className="navbar-logo-container">
           <Link to="/" className="logo">
-            <img src={logo} alt="comapny-logo" width="50" height="80" className="navbar-logo-image" />
+            <img src={logo} alt="comapny-logo" className="navbar-logo-image" />
           </Link>
+        </div>
+        <div className="menu-icons" onClick={toggleMenu}>
+          {isActive ? <IoCloseSharp /> : <GiHamburgerMenu />}
         </div>
         <div className="navbar-menu-container">
           <ul className="nav-list">
@@ -70,7 +71,7 @@ const Navbar = () => {
                         <li>SAP Ariba</li>
                       </Link>
                     </ul>
-                    <FaCaretRight />
+                    <FaCaretRight className="right-icon" />
                   </li>
                 </Link>
                 <Link to="/innovation-solutions" className="sub-menu-list-item">
