@@ -1,18 +1,16 @@
 import { Component } from "react";
 import "./index.css";
 
-
-
 import { BeatLoader } from "react-spinners";
-import medixsideimage from "../Images/medixsideimage.webp";
-import mendixbanner from "../Images/mendixremovebg.webp";
-import mendix3 from "../Images/mendix3.webp";
-import mendixappicon from "../Images/mendixiappicon.webp";
-import mendixcloudicon from "../Images/mendixcloudicon.webp";
-import mendixautoicon from '../Images/mendixautoicon.webp';
-import mendixdataintegicon from '../Images/mendixdataintegicon.webp';
-import mendixmultexpicon from '../Images/mendixmultexpicon.webp';
-import mendixaiicon from '../Images/mendixaiicon.webp'
+import medixsideimage from "../../Images/medixsideimage.webp";
+import mendixbanner from "../../Images/mendixremovebg.webp";
+import mendix3 from "../../Images/mendix3.webp";
+import mendixappicon from "../../Images/mendixiappicon.webp";
+import mendixcloudicon from "../../Images/mendixcloudicon.webp";
+import mendixautoicon from "../../Images/mendixautoicon.webp";
+import mendixdataintegicon from "../../Images/mendixdataintegicon.webp";
+import mendixmultexpicon from "../../Images/mendixmultexpicon.webp";
+import mendixaiicon from "../../Images/mendixaiicon.webp";
 import Typewriter from "typewriter-effect";
 
 class ResellerMendix extends Component {
@@ -30,7 +28,6 @@ class ResellerMendix extends Component {
     const { loading } = this.state;
     return (
       <>
-       
         {loading ? (
           <div className="spinner">
             <BeatLoader size={20} color={"#123abc"} loading={loading} />
@@ -175,10 +172,7 @@ class ResellerMendix extends Component {
               <div className="card-container">
                 <div className="card">
                   <div className="img-box">
-                    <img
-                      src={mendixdataintegicon}
-                      alt="blog"
-                    />
+                    <img src={mendixdataintegicon} alt="blog" />
                   </div>
                   <div className="content">
                     <h1 className="mendix-card-heading">Data Integration</h1>
@@ -193,10 +187,7 @@ class ResellerMendix extends Component {
               <div className="card-container">
                 <div className="card">
                   <div className="img-box">
-                    <img
-                      src={mendixmultexpicon}
-                      alt="theme"
-                    />
+                    <img src={mendixmultexpicon} alt="theme" />
                   </div>
                   <div className="content">
                     <h1 className="mendix-card-heading">Multi-Experience</h1>
@@ -231,7 +222,6 @@ class ResellerMendix extends Component {
             </div>
           </div>
         )}
-       
       </>
     );
   }

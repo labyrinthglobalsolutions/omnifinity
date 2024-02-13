@@ -1,12 +1,12 @@
 import { Component } from "react";
 import "./index.css";
 
-import polarioncsm from "../Images/polarioncsm.webp";
-import polarionsafeicon from "../Images/polarionsafeicon.webp";
-import polarionmendixicon from "../Images/polarionmedicalicon.png";
-import mendixembededicon from "../Images/mendixembededicon.webp";
-import polarioanautomotiveicon from "../Images/polarioanautomotiveicon.webp";
-import polarionaerospaceicon from "../Images/polarionaerospaceicon.webp";
+import polarioncsm from "../../Images/polarioncsm.webp";
+import polarionsafeicon from "../../Images/polarionsafeicon.webp";
+import polarionmendixicon from "../../Images/polarionmedicalicon.png";
+import mendixembededicon from "../../Images/mendixembededicon.webp";
+import polarioanautomotiveicon from "../../Images/polarioanautomotiveicon.webp";
+import polarionaerospaceicon from "../../Images/polarionaerospaceicon.webp";
 
 import { BeatLoader } from "react-spinners";
 
@@ -25,7 +25,6 @@ class ResellerPolarian extends Component {
     const { loading } = this.state;
     return (
       <>
-        
         {loading ? (
           <div className="spinner">
             <BeatLoader size={20} color={"#123abc"} loading={loading} />
@@ -213,7 +212,6 @@ class ResellerPolarian extends Component {
             </div>
           </div>
         )}
-
       </>
     );
   }
