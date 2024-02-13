@@ -8,6 +8,7 @@ import connectDB from "./Database/db.js";
 import AdminRouter from "./Routes/adminRoutes.js";
 import BannerRouter from "./Routes/bannerRoutes.js";
 import ServiceRouter from "./Routes/serviceRoutes.js";
+import partnerRouter from "./Routes/partnerRoutes.js";
 
 //config
 dotenv.config();
@@ -33,7 +34,8 @@ app.use(
   "/api/v1",
   AdminRouter,
 BannerRouter,
-ServiceRouter
+ServiceRouter,
+partnerRouter
 );
 // Define a simple route
 app.get("/", (req, res) => {
