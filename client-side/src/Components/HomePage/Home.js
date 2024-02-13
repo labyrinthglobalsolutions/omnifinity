@@ -5,7 +5,7 @@ import Player from "../Videos/pexels-tima-miroshnichenko-5377697 (2160p).mp4";
 import { IoHome } from "react-icons/io5";
 import { IoPower } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { BsFillPeopleFill } from "react-icons/bs";
+import { BsBrightnessAltHigh, BsFillPeopleFill } from "react-icons/bs";
 import image1 from "../Images/image (1).png";
 import image2 from "../Images/image (2).png";
 import image3 from "../Images/image (3).png";
@@ -136,18 +136,19 @@ export default function HomePage() {
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
-            <Carousel>
+            <Carousel >
               {HomeImages.map((each, index) => (
-                <Carousel.Item key={each.banner._id}>
+                <Carousel.Item  >
                   <img
-                    style={{ height: "500px", maxWidth: "100%" }}
-                    className="d-block w-100"
+                    style={{ height: "750px", maxWidth: "100%" }}
+                    className="d-block w-100 carouselBanner"
+                    
                     src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
                     alt={each.banner.title}
                   />
                   <div className="homepage-carousel-caption-overlay">
-                    <h3>{each.banner.title}</h3>
-                    <p>{each.banner.description}</p>
+                    <h1 style={{color:"#ffffff",fontWeight:"bolder",fontSize:"65px"}}>{each.banner.title}</h1>
+                    <p style={{color:"#ffffff",fontSize:"25px",fontWeight:"400",}}>{each.banner.description}</p>
                   </div>
                 </Carousel.Item>
               ))}
@@ -279,8 +280,8 @@ export default function HomePage() {
                   <img
                     src={image}
                     alt={`${index + 1}`}
-                    height="150"
-                    width="150"
+                    height="130"
+                    width="130"
                   />
                 </div>
               ))}
