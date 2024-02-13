@@ -6,6 +6,7 @@
   height: 400px;
   position: relative;
   padding: 10% 0 10% 0;
+  filter: brightness(0.4);
   background-position: center center;
   background-repeat: no-repeat;
 
@@ -16,4 +17,13 @@
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.contactHeading {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+
+  color: #ffffff;
+  font-weight: 900;
 }

@@ -4,10 +4,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+ 
   text-align: center;
-  background: transparent; /* Semi-transparent background */
+
+  z-index: 2;
+  
+  /* background: #02070cb8; */
   padding: 20px;
 }
 
@@ -39,7 +43,7 @@
   background: transparent;
   cursor: pointer;
 }
-.HomeInactive:hover{
+.HomeInactive:hover {
   background-color: none !important;
 }
 
@@ -59,15 +63,26 @@
   border: 0.5px solid #fff;
 }
 
-#homeButton{
-  height:45px;
-  width:150px;
-  border-radius:8px;
-  color:#ffffff;
-  text-align:center;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#0b24de;
-  font-weight:bold;
+#homeButton {
+  height: 45px;
+  width: 150px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b24de;
+  font-weight: bold;
+}
+.carouselBanner {
+  z-index: -1;
+
+  filter:brightness(0.5);
+
+ 
+  height: 100%;
+  width: 100%;
+  background-color:#02070cb8!important;
+  /* background: rgba(12, 4, 4, 0.238); */
 }

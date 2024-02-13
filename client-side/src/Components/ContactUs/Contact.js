@@ -46,8 +46,13 @@ export default function Contact() {
     <div className="totalContactUsContainer">
       <div className="container-fluid p-0 w-100">
         <div className="row">
+          <div style={{height:"400px"}}>
           <div className="col-12 contactbgcontainer">
-            <h1 className="contactHeading text-primary">Contact US!</h1>
+            {/* <h1 className="contactHeading text-primary" >Contact US!</h1> */}
+          </div>
+          <div className="col-12 text-center w-100">
+          <h1 className="contactHeading text-center" >Contact US!</h1>
+          </div>
           </div>
           {Data.map((each, index) => (
             <div className="col-12 col-md-3 text-center w-90 mt-3 mb-3 p-4">

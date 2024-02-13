@@ -32,7 +32,7 @@ const Navbar = () => {
     <div className={`navbar-container${scrolling ? " scrolling" : ""}`}>
       <nav className={isActive ? "active nav-container" : "nav-container"}>
         <div className="navbar-logo-container">
-          <Link to="/">
+          <Link to="/" className="logo">
             <img src={logo} alt="comapny-logo" className="navbar-logo-image" />
           </Link>
         </div>
