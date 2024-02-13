@@ -91,8 +91,16 @@ const Navbar = () => {
                         <li>Digital Financial Services</li>
                       </Link>
                     </ul>
-                    <FaCaretRight />
+                    <FaCaretRight  className="right-icon" />
                   </li>
+                </Link>
+                <Link to="/mendixPage"  className="sub-menu-list-item">
+                  <li>Mendix</li> 
+                  <FaCaretRight  className="right-icon mt-2 mr-2" />
+                </Link>
+                <Link to="/polarionPage"  className="sub-menu-list-item">
+                  <li>Polarion</li> 
+                  <FaCaretRight  className="right-icon mt-2 mr-2" />
                 </Link>
                 <Link to="/managed-services" className="sub-menu-list-item">
                   <li>

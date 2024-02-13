@@ -1,0 +1,385 @@
+.spinner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0;
+}
+
+.mendix-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+}
+
+.mendix-page-banner-heading-container {
+  width: 40%;
+  color: #173e7b !important;
+  font-weight: bold !important;
+  font-size: 2.5vw;
+}
+
+.mendix-page-banner {
+  background-color: #f2f7fd;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mendix-page-banner-image {
+  width: 30%;
+  height: 50%;
+}
+
+.siemens-card-logo {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 5%;
+}
+
+.siemens-mendix-hover-card:hover {
+  box-shadow: 0px 50px 80px -40px rgba(237, 75, 0, 0.81);
+}
+
+.reseller-mendix-side-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  margin-top: 4%;
+}
+
+.reseller-mendix-side-description-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  align-self: center;
+}
+
+.siemens-mendix-hover-card {
+  background-color: #ffffff;
+  border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 300ms ease 0ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.mendix-card-description {
+  font-size: 15px;
+  width: 50%;
+}
+
+.mendix-card-description-2 {
+  font-size: 15px;
+  width: 100%;
+}
+
+.mendixpic {
+  height: 400px;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.labyrinth-offering-unorderedlist-contianer {
+  width: 100%;
+  text-align: left;
+  list-style-type: circle;
+}
+
+.mendix-card-description-para {
+  text-align: left;
+  font-size: 15px;
+}
+
+.mendix-card-description-heading {
+  font-size: 20px;
+}
+
+.second-pic {
+  height: 100px;
+  width: 100px;
+  background-color: #f9f6f6;
+  border-radius: 8px;
+}
+
+.mendix-page-bottom-cards-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mendixpic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  width: 30%;
+}
+
+.reseller-mendix-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Hover cards*/
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4%;
+  margin-bottom: 2%;
+}
+
+.card-container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  max-width: 100%;
+  height: 300px;
+  color: #ffffff;
+  background: #1e2b33;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.card-container .card:hover {
+  height: 380px !important;
+}
+
+.card-container .card .img-box {
+  position: absolute;
+  top: 20px;
+  width: 170px;
+  height: 170px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-container .card:hover .img-box {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  width: 200px;
+}
+
+.card-container .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container .card .content {
+  position: absolute;
+  top: 230px !important;
+  width: 100%;
+  height: 37px !important;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-container .card:hover .content {
+  top: 130px !important ;
+  height: 300px !important;
+}
+
+.card-container .card .content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-container .card .content p {
+  color: #fff;
+}
+
+.card-container .card .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  background: var(--clr);
+  color: white;
+  font-weight: 500;
+}
+
+.card-container .card .content a:hover {
+  opacity: 0.8;
+}
+.mendix-card-heading {
+  font-size: 16px !important;
+  color: #ffffff !important;
+  font-weight: normal !important;
+}
+.para {
+  font-size: 15px !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
+.reseller-mendix-heading {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reseller-mendix-paragraph {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.reseller-mendix-image-container {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid green;
+}
+
+.reseller-mendix-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8%;
+}
+.reseller-mendix-pic-2 {
+  height: max-content;
+  width: 100%;
+  background-color: #f9f6f6;
+  border-radius: 8px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.mendixpic-container-2 {
+  width: 50%;
+}
+
+.reseller-cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .reseller-mendix-pic-2 {
+    height: max-content;
+    width: 100%;
+    background-color: #f9f6f6;
+    border-radius: 8px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .reseller-mendix-side-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 8%;
+    margin-top: 4%;
+  }
+
+  .reseller-mendix-side-description-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    align-self: center;
+  }
+
+  .mendix-card-description {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .mendixpic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+  }
+
+  .mendixpic-container-2 {
+    display: none;
+  }
+
+  .mendix-page-banner {
+    height: 25vh;
+  }
+  .mendixpic {
+    height: 250px;
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  .mendix-page-banner-heading-container {
+    width: 40%;
+    color: #173e7b !important;
+    font-weight: bold !important;
+    font-size: 2.5vw;
+  }
+
+  .siemens-mendix-hover-card {
+    background-color: #fff;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 300ms ease 0ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+  }
+  .reseller-mendix-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .reseller-mendix-paragraph {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .reseller-mendix-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

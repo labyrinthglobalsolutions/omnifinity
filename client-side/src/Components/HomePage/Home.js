@@ -350,7 +350,7 @@ export default function HomePage() {
             <h1 className="text-center mb-3 mt-2">Featured Solutions</h1>
           </div>
           {HomeCards.map((each) => (
-            <div className="col-12 col-md-4">
+            <div className="col-12 col-md-4 ">
               <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
                 <img
                   src={each.imageUrl}
