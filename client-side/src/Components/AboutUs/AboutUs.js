@@ -62,43 +62,43 @@ const ourGlobal = [
   },
 ];
 
-const leadershipCards = [
-  {
-    id: 0,
-    name: "Name",
-    deignation: "Designation",
-    image: profile,
-    link: "profile",
-  },
-  {
-    id: 1,
-    name: "Name",
-    image: profile,
-    deignation: "Designation",
-    link: "profile",
-  },
-  {
-    id: 2,
-    name: "Name",
-    image: profile,
-    deignation: "Designation",
-    link: "profile",
-  },
-  {
-    id: 3,
-    name: "Name",
-    image: profile,
-    deignation: "Designation",
-    link: "profile",
-  },
-  {
-    id: 4,
-    name: "Name",
-    image: profile,
-    deignation: "Designation",
-    link: "profile",
-  },
-];
+// const leadershipCards = [
+//   {
+//     id: 0,
+//     name: "Name",
+//     deignation: "Designation",
+//     image: profile,
+//     link: "profile",
+//   },
+//   {
+//     id: 1,
+//     name: "Name",
+//     image: profile,
+//     deignation: "Designation",
+//     link: "profile",
+//   },
+//   {
+//     id: 2,
+//     name: "Name",
+//     image: profile,
+//     deignation: "Designation",
+//     link: "profile",
+//   },
+//   {
+//     id: 3,
+//     name: "Name",
+//     image: profile,
+//     deignation: "Designation",
+//     link: "profile",
+//   },
+//   {
+//     id: 4,
+//     name: "Name",
+//     image: profile,
+//     deignation: "Designation",
+//     link: "profile",
+//   },
+// ];
 
 const AboutUs = () => {
   return (
@@ -207,7 +207,7 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
-      <div className="aboutus-second-container">
+      {/* <div className="aboutus-second-container">
         <div className="our-leadrship-caontainer">
           <div className="our-leadership-text-container">
             <h1 className="aboutus-third-heading">Our Leadership</h1>
@@ -233,7 +233,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
