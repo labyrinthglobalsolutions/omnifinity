@@ -86,12 +86,12 @@ function AdminPannel() {
           </MenuItem>
           <MenuItem
             icon={<MdAddTask />}
-            onClick={() => setActive("allService")}
-            className={active === "allService" ? "menu-active" : ""}
+            onClick={() => setActive("allServices")}
+            className={active === "allServices" ? "menu-active" : ""}
           >
-            Add Services
+            All Services
           </MenuItem>
-         
+
           <MenuItem icon={<IoLogOut />} onClick={handleLogout}>
             LogOut
           </MenuItem>
@@ -101,14 +101,7 @@ function AdminPannel() {
         {active === "allBanners" && <AllBanners />}
         {active === "addBanner" && <AddBanner />}
         {active === "addService" && <AddService />}
-        {active === "allService" && <AllServices />}
-      
-
-      
-
-      
-       
-       
+        {active === "allServices" && <AllServices />}
       </div>
     </div>
   );

@@ -13,7 +13,8 @@
   justify-content: center;
   padding: 30px;
   gap: 5px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffff40;
+
   border-radius: 10px;
 }
 
@@ -58,6 +59,19 @@
   background-color: rgb(17, 155, 17);
   border: none;
   outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.add-service-button {
+  width: 40%;
+  background-color: rgb(19, 88, 227);
+  border: none;
+  outline: none;
+  font-weight: 500;
   cursor: pointer;
   color: white;
   font-size: 16px;

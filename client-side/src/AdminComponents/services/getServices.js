@@ -1,17 +1,15 @@
-
-
-import React, { useEffect, useState } from 'react';
-import '../AllBanners.css';
-import Modal from 'react-modal';
+import React, { useEffect, useState } from "react";
+import "../AllBanners.css";
+import Modal from "react-modal";
 
 function AllServices() {
   const [services, setServices] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState(null);
   const [updatedData, setUpdatedData] = useState({
-    title: '',
-    slogan: '',
-    description: '',
+    title: "",
+    slogan: "",
+    description: "",
     image: null,
   });
 
@@ -21,23 +19,20 @@ const [selectedService, setSelectedService] = useState(null);
 
   const fetchBanners = async () => {
     try {
-      const token = sessionStorage.getItem('token');
-      const response = await fetch('http://localhost:4000/api/v1/getservice', {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
+      const response = await fetch("http://localhost:4000/api/v1/getservice", {
+        method: "GET",
       });
 
       if (!response.ok) {
-        throw new Error('Failed to fetch banners');
+        throw new Error("Failed to fetch banners");
       }
 
       const data = await response.json();
       setServices(data);
-     
+
+      console.log(data, "getr services ");
     } catch (error) {
-      console.error('Error fetching banners:', error.message);
+      console.error("Error fetching banners:", error.message);
     }
   };
 
@@ -55,9 +50,9 @@ const [selectedService, setSelectedService] = useState(null);
   const closeModal = () => {
     setSelectedService(null);
     setUpdatedData({
-      title: '',
-      slogan: '',
-      description: '',
+      title: "",
+      slogan: "",
+      description: "",
       image: null,
     });
     setIsModalOpen(false);
@@ -65,59 +60,65 @@ const [selectedService, setSelectedService] = useState(null);
 
   const handleUpdate = async () => {
     const { _id: id } = selectedService;
-    const token = sessionStorage.getItem('token');
+    const token = sessionStorage.getItem("token");
 
     try {
       const formData = new FormData();
-      formData.append('title', updatedData.title);
-      formData.append('slogan', updatedData.slogan);
-      formData.append('description', updatedData.description);
+      formData.append("title", updatedData.title);
+      formData.append("slogan", updatedData.slogan);
+      formData.append("description", updatedData.description);
 
       if (updatedData.image) {
-        formData.append('image', updatedData.image);
+        formData.append("image", updatedData.image);
       }
 
-      const response = await fetch(`http://localhost:4000/api/v1/update-service/${id}`, {
-        method: 'PUT',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-        body: formData,
-      });
+      const response = await fetch(
+        `http://localhost:4000/api/v1/update-service/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
-        throw new Error('Failed to update banner');
+        throw new Error("Failed to update banner");
       }
 
       const data = await response.json();
-      alert('Banner updated successfully!');
+      alert("Banner updated successfully!");
       fetchBanners();
       closeModal();
     } catch (error) {
-      console.error('Error updating banner:', error.message);
+      console.error("Error updating banner:", error.message);
     }
   };
 
   const handleDelete = async (id) => {
-    const token = sessionStorage.getItem('token');
+    const token = sessionStorage.getItem("token");
 
     try {
-      const response = await fetch(`http://localhost:4000/api/v1/delete-service/${id}`, {
-        method: 'DELETE',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        `http://localhost:4000/api/v1/delete-service/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (!response.ok) {
-        throw new Error('Failed to delete banner');
+        throw new Error("Failed to delete banner");
       }
 
       const data = await response.json();
-      alert('Banner deleted successfully!');
+      alert("Banner deleted successfully!");
       fetchBanners();
     } catch (error) {
-      console.error('Error deleting banner:', error.message);
+      console.error("Error deleting banner:", error.message);
     }
   };
 
@@ -125,25 +126,35 @@ const [selectedService, setSelectedService] = useState(null);
     <div className="all-banners-container">
       <h2>All Services</h2>
       <ul className="banners-list">
-    {services.map((service) => (
-      
+        {services.map((service) => (
           <li key={service._id} className="banner-item">
             <img
               src={`http://localhost:4000/uploads/services/${service.service.image}`}
               alt={service.service.title}
               className="banner-image"
-              
               onError={(e) => {
-                console.error('Error loading image:', e);
+                console.error("Error loading image:", e);
               }}
             />
             <div className="banner-details">
               <p className="banner-title">{service.service.title}</p>
               <p className="banner-description">{service.service.slogan}</p>
-              <p className="banner-description">{service.service.description}</p>
+              <p className="service-description">
+                {service.service.description}
+              </p>
               <div className="button-container">
-                <button onClick={() => openModal(service)}>Update</button>
-                <button onClick={() => handleDelete(service._id)}>Delete</button>
+                <button
+                  onClick={() => openModal(service)}
+                  className="btn btn-success"
+                >
+                  Update
+                </button>
+                <button
+                  onClick={() => handleDelete(service._id)}
+                  className="btn btn-danger"
+                >
+                  Delete
+                </button>
               </div>
             </div>
           </li>
@@ -159,33 +170,45 @@ const [selectedService, setSelectedService] = useState(null);
         overlayClassName="modal-overlay" // Custom modal overlay class
       >
         <h2>Update Banner</h2>
-    <form className='update-form'>
+        <form className="update-form">
           <label>Title:</label>
           <input
             type="text"
             value={updatedData.title}
-            onChange={(e) => setUpdatedData({ ...updatedData, title: e.target.value })}
+            onChange={(e) =>
+              setUpdatedData({ ...updatedData, title: e.target.value })
+            }
           />
-<label>Slogan:</label>
+          <label>Slogan:</label>
           <input
             type="text"
             value={updatedData.slogan}
-            onChange={(e) => setUpdatedData({ ...updatedData, slogan: e.target.value })}
+            onChange={(e) =>
+              setUpdatedData({ ...updatedData, slogan: e.target.value })
+            }
           />
           <label>Description:</label>
           <textarea
             value={updatedData.description}
-            onChange={(e) => setUpdatedData({ ...updatedData, description: e.target.value })}
+            onChange={(e) =>
+              setUpdatedData({ ...updatedData, description: e.target.value })
+            }
           />
 
           <label>Image:</label>
           <input
             type="file"
             accept="image/*"
-            onChange={(e) => setUpdatedData({ ...updatedData, image: e.target.files[0] })}
+            onChange={(e) =>
+              setUpdatedData({ ...updatedData, image: e.target.files[0] })
+            }
           />
 
-  <button className='update-button' type="button" onClick={handleUpdate}>
+          <button
+            className="update-button"
+            type="button"
+            onClick={handleUpdate}
+          >
             Update
           </button>
         </form>
@@ -195,4 +218,3 @@ const [selectedService, setSelectedService] = useState(null);
 }
 
 export default AllServices;
-

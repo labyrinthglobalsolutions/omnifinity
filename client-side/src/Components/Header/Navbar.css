@@ -4,10 +4,11 @@
   position: fixed;
   z-index: 100;
   transition: transparent 0.3s ease;
+  padding: 5px;
 }
 
 .navbar-container.scrolling {
-  background-color: rgba(73, 74, 82, 1);
+  background-color: rgb(12, 83, 148);
 }
 
 .nav-container {
@@ -31,17 +32,9 @@
   justify-content: flex-end;
 }
 
-.logo {
-  display: inline;
-  font-size: 3rem;
-  color: #eee;
-  margin-right: 5rem;
-  font-family: "Kanit", sans-serif;
-}
 .navbar-logo-image {
-  height: 60px;
-  padding: 5px;
-  width: 60px;
+  width: 160px;
+  padding: 10px;
 }
 
 .nav-list {
@@ -294,9 +287,8 @@ li.move-right {
   .navbar-menu-container {
     width: 1px;
   }
-
-  .logo {
-    margin-right: 0px;
+  .navbar-logo-image {
+    width: 90px;
   }
 
   .menu-icons {

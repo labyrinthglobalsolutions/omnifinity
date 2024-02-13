@@ -43,6 +43,10 @@
   font-size: 1rem;
 }
 
+.service-description {
+  overflow: hidden;
+  height: 120px;
+}
 .button-container {
   display: flex;
   gap: 10px;
