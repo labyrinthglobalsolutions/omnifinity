@@ -49,37 +49,55 @@ function AddService() {
   };
 
   return (
-<div className="add-banner">
-      <h2>Add Banner</h2>
-      <form>
-        <label>Title:</label>
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <br />
-        <label>slogan:</label>
-        <input
-          type="text"
-          value={slogan}
-          onChange={(e) => setSlogan(e.target.value)}
-        />
-        <br />
-        <label>Description:</label>
-        <input
-          type="text"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <br />
+    <div className="add-banner-container">
+      <form className="add-banner-form-container">
+        <h2 className="add-banner-heading">Add Services</h2>
+        <div className="add-banner-input-container">
+          <label className="add-banner-label">Title</label>
+          <input
+            type="text"
+            placeholder="Enter Service Title"
+            className="add-banner-input"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="add-banner-input-container">
+          <label className="add-banner-label">Slogan</label>
+          <input
+            placeholder="Enter Slogan"
+            className="add-banner-input"
+            type="text"
+            value={slogan}
+            onChange={(e) => setSlogan(e.target.value)}
+          />
+        </div>
+        <div className="add-banner-input-container">
+          <label className="add-banner-label">Description</label>
+          <input
+            placeholder="Enter Description"
+            className="add-banner-input"
+            type="text"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </div>
+        <div className="add-banner-input-container">
+          <label className="add-banner-label">Image</label>
 
-        <label>Image:</label>
-        <input type="file" onChange={handleFileChange} />
-        <br />
-
-        <button type="button" onClick={addBanner}>
-          Add Banner
+          <input
+            type="file"
+            onChange={handleFileChange}
+            placeholder="Select a File"
+            className="add-banner-file-input"
+          />
+        </div>
+        <button
+          type="button"
+          className="add-service-button"
+          onClick={addBanner}
+        >
+          Add Service
         </button>
       </form>
     </div>
