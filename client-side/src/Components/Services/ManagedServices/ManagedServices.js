@@ -14,7 +14,7 @@ const ManagedServices = () => {
       image: managed1,
       heading: "Staff Augmentation Services",
       description:
-        "Tap into the talent of skilled and budget-friendly professionals worldwide with Abacus. We provide access to personalized and highly qualified technology resources to help you optimize costs and deliver projects on time. Our technical experts possess extensive experience working with leading global brands, equipping them with exceptional technology and business acumen.",
+        "Tap into the talent of skilled and budget-friendly professionals worldwide with Omnifinity. We provide access to personalized and highly qualified technology resources to help you optimize costs and deliver projects on time. Our technical experts possess extensive experience working with leading global brands, equipping them with exceptional technology and business acumen.",
       link: "",
     },
     {
@@ -38,7 +38,7 @@ const ManagedServices = () => {
       image: managed4,
       heading: "Managed Cloud Services",
       description:
-        "In today's world where cloud computing has become the backbone of most businesses, managing it can be a daunting task as it requires a team of highly skilled professionals and extensive technical knowledge. For this challenge Abacus offers a comprehensive suite of cloud management solutions to help businesses optimize their cloud environment and achieve their goals.",
+        "In today's world where cloud computing has become the backbone of most businesses, managing it can be a daunting task as it requires a team of highly skilled professionals and extensive technical knowledge. For this challenge Omnifinity offers a comprehensive suite of cloud management solutions to help businesses optimize their cloud environment and achieve their goals.",
       link: "",
     },
   ];
@@ -49,7 +49,7 @@ const ManagedServices = () => {
         <div className="managed-services-bg-container"> </div>
         <div className="managed-services-bg-sub-container">
           <h1 className="managed-services-bg-heading">
-            Accelerate Your Digital Agenda with Abacus Managed Services
+            Accelerate Your Digital Agenda with Omnifinity Managed Services
           </h1>
         </div>
       </div>
@@ -64,8 +64,8 @@ const ManagedServices = () => {
           customer experiences, and capture the true workforce potential.
         </p>
         <p className="managed-services-main-description">
-          This is where Abacus helps organisations to efficiently design, build
-          and run their technology landscape to accelerate business
+          This is where Omnifinity helps organisations to efficiently design,
+          build and run their technology landscape to accelerate business
           transformation — today and beyond. We offer modern approaches for
           configuring and optimising digital-first infrastructure interwoven
           into every part of your enterprise. Our Managed Services adhere to
@@ -73,7 +73,7 @@ const ManagedServices = () => {
         </p>
         <div className="managed-services-card-main-container">
           <h1 className="managed-services-card-main-heading">
-            Drive Tangible Business Outcomes with Abacus Managed Services
+            Drive Tangible Business Outcomes with Omnifinity Managed Services
           </h1>
 
           <ul className="managed-services-card-flex-container">
@@ -103,7 +103,7 @@ const ManagedServices = () => {
       <div className="managed-services-third-container">
         <div className="managed-services-text-container">
           <h3 className="managed-services-third-heading">
-            Why Abacus for your Managed Services
+            Why Omnifinity for your Managed Services
           </h3>
           <div className="managed-services-text-fields-container">
             <p className="managed-services-third-text">

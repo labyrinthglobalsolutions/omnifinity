@@ -74,23 +74,23 @@ const EnterpriseSystems = () => {
       </div>
       <div className="enterprise-systems-second-container">
         <p className="enterprise-systems-main-description">
-          Abacus, an SAP Gold Partner, has been providing comprehensive
+          Omnifinity, an SAP Gold Partner, has been providing comprehensive
           Enterprise Systems solutions to businesses of all sizes, with the goal
           of driving innovation, engagement, and value relevant to their
           business needs. As the world progresses into the age of intelligence,
           it is imperative not to be left behind. To become an intelligent and
-          agile enterprise, you need the right tools and methodologies. Abacus
-          enables you to achieve this goal by implementing the necessary
-          solutions to accelerate business growth, transfer knowledge, and
-          continuously improve your business.
+          agile enterprise, you need the right tools and methodologies.
+          Omnifinity enables you to achieve this goal by implementing the
+          necessary solutions to accelerate business growth, transfer knowledge,
+          and continuously improve your business.
         </p>
         <p className="enterprise-systems-main-description">
           Our SAP offerings are tailored to meet the needs of small, medium, and
           large enterprises that seek to transition to intelligent platforms,
           thereby gaining an edge over their competitors in a digitally
           competitive world. Whether you are a growing startup or an established
-          enterprise, Abacus has the expertise to guide you towards becoming an
-          intelligent and agile enterprise.
+          enterprise, Omnifinity has the expertise to guide you towards becoming
+          an intelligent and agile enterprise.
         </p>
         <div className="enterprise-systems-card-main-container">
           <h1 className="enterprise-systems-card-main-heading">

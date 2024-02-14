@@ -66,18 +66,18 @@ class ResellerMendix extends Component {
                   SIEMENS MENDIX
                 </h1>
                 <p className="mendix-card-description-para">
-                  LGS is Siemens Mendix Channel partner in India.
+                  Omnifinity is Siemens Mendix Channel partner in India.
                 </p>
                 <p className="mendix-card-description-para">
-                  LGS have been working with Mendix application development
-                  space since 2019 even before Siemens acquisition of Polarion.
-                  LGS is your go-to destination for cutting-edge software and
-                  app development using the powerful Mendix low-code platform.
-                  We deliver innovative solutions that drive success, tailored
-                  to your specific needs. As authorized Mendix resellers, we
-                  ensure access to the latest tools for your digital
-                  initiatives. Let's embark on this exciting journey together
-                  and empower innovation with LGS.
+                  Omnifinity have been working with Mendix application
+                  development space since 2019 even before Siemens acquisition
+                  of Polarion. Omnifinity is your go-to destination for
+                  cutting-edge software and app development using the powerful
+                  Mendix low-code platform. We deliver innovative solutions that
+                  drive success, tailored to your specific needs. As authorized
+                  Mendix resellers, we ensure access to the latest tools for
+                  your digital initiatives. Let's embark on this exciting
+                  journey together and empower innovation with Omnifinity.
                 </p>
                 <p className="mendix-card-description-para">
                   We have been delivering flawless services across global to

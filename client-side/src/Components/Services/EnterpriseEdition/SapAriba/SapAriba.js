@@ -99,7 +99,7 @@ const SapAriba = () => {
           <h3 className="saphana-enterprise-system-text">ENTERPRISE SYSTEMS</h3>
           <h1 className="saphana-bg-heading">SAP Ariba</h1>
           <p className="saphana-bg-sub-heading">
-            Accelerate Your Journey to Intelligent Procurement with Abacus
+            Accelerate Your Journey to Intelligent Procurement with Omnifinity
           </p>
         </div>
       </div>
@@ -202,16 +202,16 @@ const SapAriba = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP Ariba Implementation"} />
+      <WhyUsBanner title={"Why Omnifinity for your SAP Ariba Implementation"} />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          With more than 400 specialists, Abacus Cambridge Partners has a large
-          and established force of SAP consultants working at more than 35
-          projects sites across the globe. With 1200+ projects under our belt,
-          we have demonstrated quick wins and have real value to our clients.
-          Our experienced and certified team of SAP consultants delivers
-          unmatched services and smart and scalable business solutions built on
-          SAP technologies, helping our clients to transform into truly dynamic,
+          With more than 400 specialists, Omnifinity Partners has a large and
+          established force of SAP consultants working at more than 35 projects
+          sites across the globe. With 1200+ projects under our belt, we have
+          demonstrated quick wins and have real value to our clients. Our
+          experienced and certified team of SAP consultants delivers unmatched
+          services and smart and scalable business solutions built on SAP
+          technologies, helping our clients to transform into truly dynamic,
           agile, and intelligent enterprises.
         </p>
 

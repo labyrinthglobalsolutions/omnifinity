@@ -136,19 +136,34 @@ export default function HomePage() {
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
-            <Carousel >
+            <Carousel>
               {HomeImages.map((each, index) => (
-                <Carousel.Item  >
+                <Carousel.Item>
                   <img
                     style={{ height: "750px", maxWidth: "100%" }}
                     className="d-block w-100 carouselBanner"
-                    
                     src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
                     alt={each.banner.title}
                   />
                   <div className="homepage-carousel-caption-overlay">
-                    <h1 style={{color:"#ffffff",fontWeight:"bolder",fontSize:"65px"}}>{each.banner.title}</h1>
-                    <p style={{color:"#ffffff",fontSize:"25px",fontWeight:"400",}}>{each.banner.description}</p>
+                    <h1
+                      style={{
+                        color: "#ffffff",
+                        fontWeight: "bolder",
+                        fontSize: "65px",
+                      }}
+                    >
+                      {each.banner.title}
+                    </h1>
+                    <p
+                      style={{
+                        color: "#ffffff",
+                        fontSize: "25px",
+                        fontWeight: "400",
+                      }}
+                    >
+                      {each.banner.description}
+                    </p>
                   </div>
                 </Carousel.Item>
               ))}
@@ -255,15 +270,14 @@ export default function HomePage() {
           <div className="col-12">
             <p>
               Partnership and collaboration with global technology leaders are
-              at the core of Abacus Cambridge Partners' philosophy. By bringing
-              together specialists and leaders, our goal is to generate
-              significant value from digital transformation projects our
-              customers invest in. Our Partners are numerous, and we remain open
-              to new ideas and opportunities for collaboration. As a couple of
-              examples of highly successful Abacus partnerships, we have been
-              partners with SAP and Google and have been continually
-              acknowledged by both companies as leaders to achieve great results
-              for our clients.
+              at the core of Omnifinity philosophy. By bringing together
+              specialists and leaders, our goal is to generate significant value
+              from digital transformation projects our customers invest in. Our
+              Partners are numerous, and we remain open to new ideas and
+              opportunities for collaboration. As a couple of examples of highly
+              successful Omnifinity partnerships, we have been partners with SAP
+              and Google and have been continually acknowledged by both
+              companies as leaders to achieve great results for our clients.
             </p>
           </div>
           <div

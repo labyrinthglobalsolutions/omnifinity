@@ -38,11 +38,11 @@ class ResellerPolarian extends Component {
                     SIEMENS POLARION
                   </h1>
                   <p className="resellar-polarian-card-description-para">
-                    LGS is Siemens Polarion Channel partner in India.
+                    Omnifinity is Siemens Polarion Channel partner in India.
                   </p>
                   <p className="resellar-polarian-card-description-para">
-                    LGS have been working in Polarion ALM space since 2014 even
-                    before Siemens acquisition of Polarion.
+                    Omnifinity have been working in Polarion ALM space since
+                    2014 even before Siemens acquisition of Polarion.
                   </p>
                   <p className="resellar-polarian-card-description-para">
                     We have been delivering flawless services across global to
