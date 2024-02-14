@@ -22,6 +22,7 @@ import SapBusinessByDesign from "./Components/Services/EnterpriseEdition/SapBusi
 import SapBusinessOne from "./Components/Services/EnterpriseEdition/SapBusinessOne/SapBusinessOne.js";
 import SapCustomer from "./Components/Services/EnterpriseEdition/SapCustomer/SapCustomer.js";
 import SapAriba from "./Components/Services/EnterpriseEdition/SapAriba/SapAriba.js";
+import ManagedCloud from "./Components/Services/ManagedServices/ManagedCloud/ManagedCloud.js";
 
 function App() {
   const location = useLocation();
@@ -75,6 +76,11 @@ function App() {
         <Route
           path="/enterprise-systems/sap-customer-checkout"
           element={<SapCustomer />}
+        />
+
+        <Route
+          path="/managed-services/manage-cloud"
+          element={<ManagedCloud />}
         />
 
         <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />

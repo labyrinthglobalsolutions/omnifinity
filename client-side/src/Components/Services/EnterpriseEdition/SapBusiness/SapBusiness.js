@@ -185,11 +185,11 @@ const SapBusinessByDesign = () => {
         </ul>
       </div>
       <WhyUsBanner
-        title={"Why Abacus for your SAP Business ByDesign Implmentation"}
+        title={"Why Omnifinity for your SAP Business ByDesign Implmentation"}
       />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners has a proven track record of successful SAP
+          Omnifinity Partners has a proven track record of successful SAP
           Business ByDesign projects with a skilled team of consultants. We can
           quickly deploy this ERP solution while also considering your
           business's future requirements. Contact us now for a demo of SAP

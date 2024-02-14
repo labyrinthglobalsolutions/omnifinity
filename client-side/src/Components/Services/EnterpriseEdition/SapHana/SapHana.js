@@ -182,11 +182,13 @@ const SapHana = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implementation"} />
+      <WhyUsBanner
+        title={"Why Omnifinity for your SAP S/4HANA Implementation"}
+      />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners is not a new name to SAP suite of solutions.
-          Our skilled team can map out a strategy on SAP S/4HANA that not only
+          Omnifinity Partners is not a new name to SAP suite of solutions. Our
+          skilled team can map out a strategy on SAP S/4HANA that not only
           focuses on your current goals but also takes into account the future
           requirements of your business. We have also successfully executed
           projects for on-premise, private cloud and hybrid environments.

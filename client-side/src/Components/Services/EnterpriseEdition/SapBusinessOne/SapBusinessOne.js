@@ -176,12 +176,14 @@ const SapBusinessOne = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implmentation"} />
+      <WhyUsBanner
+        title={"Why Omnifinity for your SAP S/4HANA Implmentation"}
+      />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          With our decades of experience, Abacus has established itself as one
-          of the most trusted implementation partners of SAP technologies. With
-          our presence in 35 countries and over 1200 SAP Business One
+          With our decades of experience, Omnifinity has established itself as
+          one of the most trusted implementation partners of SAP technologies.
+          With our presence in 35 countries and over 1200 SAP Business One
           implementations across industries, our experienced and certified team
           of SAP Business One consultants delivers unmatched services and smart
           and scalable business solutions built on SAP technologies to our

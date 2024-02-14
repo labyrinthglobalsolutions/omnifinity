@@ -109,29 +109,41 @@ const Navbar = () => {
                     <FaCaretRight className="right-icon" />
                   </li>
                 </Link>
-                <Link to="/mendixPage" className="sub-menu-list-item">
-                  <li>Mendix</li>
-                  <FaCaretRight className="right-icon mt-2 mr-2" />
-                </Link>
-                <Link to="/polarionPage" className="sub-menu-list-item">
-                  <li>Polarion</li>
-                  <FaCaretRight className="right-icon mt-2 mr-2" />
-                </Link>
+
                 <Link to="/managed-services" className="sub-menu-list-item">
                   <li>
                     Managed Services
                     <ul className="managed-menu">
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/managed-services/manage-cloud"
+                        className="sub-menu-list-item"
+                      >
                         <li>Managed Cloud</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/managed-services/devops"
+                        className="sub-menu-list-item"
+                      >
                         <li>DevOps</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/managed-services/staff-augmentation"
+                        className="sub-menu-list-item"
+                      >
                         <li>Staff Augmentation</li>
                       </Link>
                     </ul>
                     <FaCaretRight />
+                  </li>
+                </Link>
+                <Link to="/mendixPage" className="sub-menu-list-item">
+                  <li>
+                    Mendix <FaCaretRight />
+                  </li>
+                </Link>
+                <Link to="/polarionPage" className="sub-menu-list-item">
+                  <li>
+                    Polarion <FaCaretRight />
                   </li>
                 </Link>
               </ul>

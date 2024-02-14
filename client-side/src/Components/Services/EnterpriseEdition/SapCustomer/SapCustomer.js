@@ -160,13 +160,13 @@ const SapCustomer = () => {
         </ul>
       </div>
       <WhyUsBanner
-        title={"Why Abacus for your SAP Customer Checkout Implementation"}
+        title={"Why Omnifinity for your SAP Customer Checkout Implementation"}
       />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
           If you're looking to tailor POS solution for your business's specific
-          requirements, then Abacus Cambridge Partners is the perfect PARTNER.
-          Contact us to get a demo of SAP Customer Checkout.
+          requirements, then Omnifinity Partners is the perfect PARTNER. Contact
+          us to get a demo of SAP Customer Checkout.
         </p>
 
         <button
