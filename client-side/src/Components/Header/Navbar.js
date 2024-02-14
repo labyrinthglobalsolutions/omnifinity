@@ -78,7 +78,7 @@ const Navbar = () => {
                   <li>
                     Innovation Solutions
                     <ul className="innovation-menu">
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link to="/AnalyticsBI" className="sub-menu-list-item">
                         <li>Analytics & BI</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
