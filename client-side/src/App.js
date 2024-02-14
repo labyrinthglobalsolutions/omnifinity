@@ -12,6 +12,7 @@ import AdminLogin from "./AdminComponents/adminLogin";
 import AdminPannel from "./AdminComponents/adminPanel";
 import Contact from "./Components/ContactUs/Contact";
 import Footer from "./Components/Footer/Footer";
+import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js"
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
@@ -85,6 +86,7 @@ function App() {
         <Route path="/forget-password" element={<ForgetPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/mendixPage" element={<ResellerMendixPage />} />
+        <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/polarionPage" element={<ResellerPolarionPage />} />
       </Routes>
       {!isInsideAdminPanel && <Footer />}
