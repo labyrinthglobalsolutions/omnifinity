@@ -15,9 +15,12 @@ import Footer from "./Components/Footer/Footer";
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
-
 import ManagedServices from "./Components/Services/ManagedServices/ManagedServices";
 import SapHana from "./Components/Services/EnterpriseEdition/SapHana/SapHana";
+import SapBusinessByDesign from "./Components/Services/EnterpriseEdition/SapBusiness/SapBusiness.js";
+import SapBusinessOne from "./Components/Services/EnterpriseEdition/SapBusinessOne/SapBusinessOne.js";
+import SapCustomer from "./Components/Services/EnterpriseEdition/SapCustomer/SapCustomer.js";
+import SapAriba from "./Components/Services/EnterpriseEdition/SapAriba/SapAriba.js";
 
 function App() {
   const location = useLocation();
@@ -58,7 +61,23 @@ function App() {
         <Route path="/innovation-solutions" element={<InnovationSolutions />} />
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
-        <Route path="/sap-hana" element={<SapHana />} />
+        <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
+        <Route
+          path="/enterprise-systems/sap-business-by-design"
+          element={<SapBusinessByDesign />}
+        />
+        <Route
+          path="/enterprise-systems/sap-business-one"
+          element={<SapBusinessOne />}
+        />
+
+        <Route
+          path="/enterprise-systems/sap-customer-checkout"
+          element={<SapCustomer />}
+        />
+
+        <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
+
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/contactUs" element={<Contact />} />

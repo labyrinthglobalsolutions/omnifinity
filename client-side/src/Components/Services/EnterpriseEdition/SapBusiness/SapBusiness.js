@@ -1,105 +1,107 @@
 import React from "react";
 
-import "./SapHana.css";
+import "../SapHana/SapHana.css";
 import { Fade } from "react-awesome-reveal";
 import WhyUsBanner from "../../WhyUsBanner/WhyusBanner";
-import sapnahana1 from "../../../../images/Enterprise/SapHana/saphana1.png";
-import sapnahana2 from "../../../../images/Enterprise/SapHana/saphana2.png";
-import sapnahana3 from "../../../../images/Enterprise/SapHana/saphana3.png";
-import sapnahana4 from "../../../../images/Enterprise/SapHana/saphana4.png";
-import sapnahana5 from "../../../../images/Enterprise/SapHana/saphana5.png";
-import sapnahana6 from "../../../../images/Enterprise/SapHana/saphana6.png";
-import sapnahana7 from "../../../../images/Enterprise/SapHana/saphana7.png";
+import sapbusiness1 from "../../../../images/Enterprise/SapBusiness/sapbusiness1.webp";
+import sapbusiness2 from "../../../../images/Enterprise/SapBusiness/sapbusiness2.webp";
+import sapbusiness3 from "../../../../images/Enterprise/SapBusiness/sapbusiness3.webp";
+import sapbusiness4 from "../../../../images/Enterprise/SapBusiness/sapbusiness4.webp";
+import sapbusiness5 from "../../../../images/Enterprise/SapBusiness/sapbusiness5.webp";
+import sapbusiness6 from "../../../../images/Enterprise/SapBusiness/sapbusiness6.webp";
+import sapbusiness7 from "../../../../images/Enterprise/SapBusiness/sapbusiness7.webp";
 import { useNavigate } from "react-router-dom";
 const data = [
   {
     id: 1,
-    image: sapnahana1,
-    heading: "Streamlined Data Model",
+    image: sapbusiness1,
+    heading: "Financial Management",
     description:
-      "Unlike traditional ERP systems, SAP S/4HANA utilizes a simplified data model that eliminates redundancies and reduces data footprint. This streamlined approach results in faster processing and improved performance.",
+      "SAP Business ByDesign offers a range of financial management tools to manage financial transactions, accounts payable and receivable, general ledger, budgeting, and more.",
     link: "",
   },
   {
     id: 2,
-    image: sapnahana2,
-    heading: "In-Memory Computing",
+    image: sapbusiness2,
+    heading: "Customer Relationship Management (CRM)",
     description:
-      "SAP S/4HANA leverages in-memory computing technology that enables the processing of large amounts of data in real-time. This allows users to access insights and make informed decisions quickly and accurately. ",
+      "The CRM module of SAP Business ByDesign helps businesses manage customer data, sales, and marketing activities, including campaigns, lead management, and customer analytics.",
     link: "",
   },
   {
     id: 3,
-    image: sapnahana3,
-    heading: "Real-time Analytics",
+    image: sapbusiness3,
+    heading: "Supply Chain Management",
     description:
-      "SAP S/4HANA comes with built-in analytics capabilities that enable users to analyze data in real-time. This includes predictive analytics, which helps organizations forecast future trends and make data-driven decisions.",
+      "The supply chain management module of SAP Business ByDesign includes tools for inventory management, purchasing, production, and logistics, enabling businesses to optimize their supply chain operations.",
     link: "",
   },
   {
     id: 4,
-    image: sapnahana4,
-    heading: "Mobile-first",
+    image: sapbusiness4,
+    heading: "Project Management",
     description:
-      "SAP S/4HANA has been designed with a mobile-first approach, making it accessible from any device at any time, from anywhere.",
+      "SAP Business ByDesign's project management module helps businesses manage projects, including task allocation, budget tracking, and project planning.",
     link: "",
   },
   {
     id: 5,
-    image: sapnahana5,
-    heading: "Enhanced User Experience",
+    image: sapbusiness5,
+    heading: "Human Resources Management",
     description:
-      "The system provides a modern, intuitive user interface that is customizable and easy to use, leading to better user adoption and increased productivity.",
+      "The HR management module of SAP Business ByDesign includes tools for managing employee data, payroll, benefits administration, performance management, and more.",
     link: "",
   },
   {
     id: 6,
-    image: sapnahana6,
-    heading: "Cloud Deployment",
+    image: sapbusiness6,
+    heading: "Analytics and Reporting",
     description:
-      "SAP S/4HANA can be deployed on-premise, in the cloud, or in a hybrid environment, giving organizations the flexibility to choose the deployment model that best suits their needs.",
+      "SAP Business ByDesign provides advanced analytics and reporting tools that enable businesses to analyze data and make informed decisions. These tools can help businesses identify opportunities, trends, and issues, and improve their operations accordingly.",
     link: "",
   },
   {
     id: 7,
-    image: sapnahana7,
-    heading: "Machine Learning",
+    image: sapbusiness7,
+    heading: "Mobile Access",
     description:
-      "SAP S/4HANA leverages machine learning to automate repetitive tasks, identify patterns in data, and provide intelligent recommendations. This enhances efficiency, reduces errors, and increases productivity.",
+      "SAP Business ByDesign supports mobile access, enabling businesses to access the software and manage their operations from anywhere, at any time.",
     link: "",
   },
 ];
 
-const SapHana = () => {
+const SapBusinessByDesign = () => {
   const navigate = useNavigate();
   return (
     <>
       <div className="saphana-first-container">
-        <div className="saphana-bg-container"></div>
+        <div className="sap-business-by-design-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">ENTERPRISE SYSTEMS</h3>
-          <h1 className="saphana-bg-heading">SAP S/4HANA</h1>
-          <p className="saphana-bg-sub-heading">The ultimate ERP</p>
+          <h1 className="saphana-bg-heading">SAP Business ByDesign</h1>
+          <p className="saphana-bg-sub-heading">
+            Accelerate profitable growth with an on-demand ERP
+          </p>
         </div>
       </div>
       <div className="saphana-second-main-container">
         <div className="saphana-second-main-left-container">
           <Fade direction="up">
             <p className="saphana-second-main-left-descripton">
-              SAP S/4HANA is an advanced ERP (Enterprise Resource Planning)
-              system designed to help businesses operate smarter, faster, and
-              simpler. This modern platform is powered by state-of-the-art
-              in-memory computing technology and offers a range of advanced
-              features to improve the user experience, simplify business
-              processes, and provide real-time insights.
+              SAP Business ByDesign is an ERP (Enterprise Resource Planning)
+              software for small and medium-sized businesses. This cloud-based
+              software streamlines operation and manages key business processes
+              efficiently. It provides a comprehensive set of tools tailored to
+              support various industries, allowing businesses to optimize
+              workflows and stay competitive.
             </p>
             <p className="saphana-second-main-left-descripton">
-              This next-generation ERP system delivers real-time insights, a
-              streamlined user experience, and powerful analytics capabilities.
-              Its in-memory computing technology, built-in analytics, and
-              machine learning capabilities make it a powerful tool for
-              businesses looking to gain a competitive edge in today's
-              fast-paced business environment.
+              TThis software solution is ideal for businesses aiming to
+              streamline operations and improve efficiency. With its
+              comprehensive tools, flexible features, scalability, and
+              user-friendly interface, SAP Business ByDesign can help businesses
+              achieve their goals and remain competitive in today's fast-paced
+              business environment.
             </p>
           </Fade>
         </div>
@@ -156,7 +158,7 @@ const SapHana = () => {
       </div>
       <div className="saphana-systems-card-main-container">
         <h1 className="saphana-systems-card-main-heading">
-          Key Features of SAP S/4HANA
+          Key Features of SAP Business ByDesign
         </h1>
 
         <ul className="saphana-systems-card-flex-container">
@@ -182,20 +184,21 @@ const SapHana = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implementation"} />
+      <WhyUsBanner
+        title={"Why Abacus for your SAP Business ByDesign Implmentation"}
+      />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners is not a new name to SAP suite of solutions.
-          Our skilled team can map out a strategy on SAP S/4HANA that not only
-          focuses on your current goals but also takes into account the future
-          requirements of your business. We have also successfully executed
-          projects for on-premise, private cloud and hybrid environments.
-          Contact us to get a demo of SAP S/4HANA.
+          Abacus Cambridge Partners has a proven track record of successful SAP
+          Business ByDesign projects with a skilled team of consultants. We can
+          quickly deploy this ERP solution while also considering your
+          business's future requirements. Contact us now for a demo of SAP
+          Business ByDesign.
         </p>
 
         <button
           className="omnifinity-button"
-          onClick={() => navigate("/contactUs")}
+          onClick={() => navigate("/contactUS")}
         >
           Contact Us
         </button>
@@ -203,4 +206,4 @@ const SapHana = () => {
     </>
   );
 };
-export default SapHana;
+export default SapBusinessByDesign;

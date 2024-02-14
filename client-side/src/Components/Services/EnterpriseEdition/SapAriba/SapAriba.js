@@ -1,105 +1,125 @@
 import React from "react";
 
-import "./SapHana.css";
+import "../SapHana/SapHana.css";
 import { Fade } from "react-awesome-reveal";
 import WhyUsBanner from "../../WhyUsBanner/WhyusBanner";
-import sapnahana1 from "../../../../images/Enterprise/SapHana/saphana1.png";
-import sapnahana2 from "../../../../images/Enterprise/SapHana/saphana2.png";
-import sapnahana3 from "../../../../images/Enterprise/SapHana/saphana3.png";
-import sapnahana4 from "../../../../images/Enterprise/SapHana/saphana4.png";
-import sapnahana5 from "../../../../images/Enterprise/SapHana/saphana5.png";
-import sapnahana6 from "../../../../images/Enterprise/SapHana/saphana6.png";
-import sapnahana7 from "../../../../images/Enterprise/SapHana/saphana7.png";
+
+import sapariba1 from "../../../../images/Enterprise/SapAriba/sapariba1.jpg";
+import sapariba2 from "../../../../images/Enterprise/SapAriba/sapariba2.jpg";
+import sapariba3 from "../../../../images/Enterprise/SapAriba/sapariba3.jpg";
+import sapariba4 from "../../../../images/Enterprise/SapAriba/sapariba4.jpg";
+import sapariba5 from "../../../../images/Enterprise/SapAriba/sapariba5.jpg";
+import sapariba6 from "../../../../images/Enterprise/SapAriba/sapariba6.jpg";
+import sapariba7 from "../../../../images/Enterprise/SapAriba/sapariba7.jpg";
+import sapariba8 from "../../../../images/Enterprise/SapAriba/sapariba8.jpg";
+import sapariba9 from "../../../../images/Enterprise/SapAriba/sapariba9.jpg";
+
 import { useNavigate } from "react-router-dom";
+
 const data = [
   {
     id: 1,
-    image: sapnahana1,
-    heading: "Streamlined Data Model",
+    image: sapariba1,
+    heading: "Procurement Automation",
     description:
-      "Unlike traditional ERP systems, SAP S/4HANA utilizes a simplified data model that eliminates redundancies and reduces data footprint. This streamlined approach results in faster processing and improved performance.",
+      ": SAP Ariba helps businesses automate their procurement processes, ensuring compliance with policies and regulations",
     link: "",
   },
   {
     id: 2,
-    image: sapnahana2,
-    heading: "In-Memory Computing",
+    image: sapariba2,
+    heading: "Contract Management",
     description:
-      "SAP S/4HANA leverages in-memory computing technology that enables the processing of large amounts of data in real-time. This allows users to access insights and make informed decisions quickly and accurately. ",
+      "The platform streamlines the contract management process with features such as contract authoring, negotiation, execution, and monitoring.",
     link: "",
   },
   {
     id: 3,
-    image: sapnahana3,
-    heading: "Real-time Analytics",
+    image: sapariba3,
+    heading: "Supplier Management",
     description:
-      "SAP S/4HANA comes with built-in analytics capabilities that enable users to analyze data in real-time. This includes predictive analytics, which helps organizations forecast future trends and make data-driven decisions.",
+      "SAP Ariba helps businesses manage supplier relationships, including onboarding, qualification, and performance monitoring.",
     link: "",
   },
   {
     id: 4,
-    image: sapnahana4,
-    heading: "Mobile-first",
+    image: sapariba4,
+    heading: "Strategic Sourcing",
     description:
-      "SAP S/4HANA has been designed with a mobile-first approach, making it accessible from any device at any time, from anywhere.",
+      "The platform helps businesses identify, evaluate, and select suppliers, negotiate contracts, and manage the entire sourcing process.",
     link: "",
   },
   {
     id: 5,
-    image: sapnahana5,
-    heading: "Enhanced User Experience",
+    image: sapariba5,
+    heading: "Invoice Management",
     description:
-      "The system provides a modern, intuitive user interface that is customizable and easy to use, leading to better user adoption and increased productivity.",
+      "SAP Ariba automates the invoice processing from receipt to payment while ensuring compliance with tax and regulatory requirements.",
     link: "",
   },
   {
     id: 6,
-    image: sapnahana6,
-    heading: "Cloud Deployment",
+    image: sapariba6,
+    heading: "Spend Analysis",
     description:
-      "SAP S/4HANA can be deployed on-premise, in the cloud, or in a hybrid environment, giving organizations the flexibility to choose the deployment model that best suits their needs.",
+      "Businesses can use SAP Ariba to gain insights into their spending patterns, identify cost-saving opportunities, and optimize their procurement strategies.",
     link: "",
   },
   {
     id: 7,
-    image: sapnahana7,
-    heading: "Machine Learning",
+    image: sapariba7,
+    heading: "Mobile App",
     description:
-      "SAP S/4HANA leverages machine learning to automate repetitive tasks, identify patterns in data, and provide intelligent recommendations. This enhances efficiency, reduces errors, and increases productivity.",
-    link: "",
+      "SAP Ariba offers a mobile app that allows users to manage procurement tasks, collaborate with suppliers, and access real-time information from anywhere.",
+  },
+  {
+    id: 8,
+    image: sapariba8,
+    heading: "Analytics and Reporting",
+    description:
+      "The platform provides advanced analytics and reporting capabilities, enabling businesses to track spending, monitor supplier performance, and make data-driven decisions.",
+  },
+  {
+    id: 9,
+    image: sapariba9,
+    heading: "Integration with Other Systems",
+    description:
+      "SAP Ariba integrates with other enterprise systems, such as ERP and CRM, to provide a seamless procurement experience.",
   },
 ];
 
-const SapHana = () => {
+const SapAriba = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="saphana-first-container">
-        <div className="saphana-bg-container"></div>
+        <div className="sap-ariba-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">ENTERPRISE SYSTEMS</h3>
-          <h1 className="saphana-bg-heading">SAP S/4HANA</h1>
-          <p className="saphana-bg-sub-heading">The ultimate ERP</p>
+          <h1 className="saphana-bg-heading">SAP Ariba</h1>
+          <p className="saphana-bg-sub-heading">
+            Accelerate Your Journey to Intelligent Procurement with Abacus
+          </p>
         </div>
       </div>
       <div className="saphana-second-main-container">
         <div className="saphana-second-main-left-container">
           <Fade direction="up">
             <p className="saphana-second-main-left-descripton">
-              SAP S/4HANA is an advanced ERP (Enterprise Resource Planning)
-              system designed to help businesses operate smarter, faster, and
-              simpler. This modern platform is powered by state-of-the-art
-              in-memory computing technology and offers a range of advanced
-              features to improve the user experience, simplify business
-              processes, and provide real-time insights.
+              SAP Ariba is a cloud-based procurement platform that connects
+              buyers and suppliers to streamline B2B procurement processes. With
+              this solution, businesses can collaborate with suppliers,
+              negotiate contracts, manage purchasing approvals, and monitor
+              spending. The platform is designed to be user-friendly, allowing
+              businesses to quickly adopt the system and see the benefits of a
+              streamlined procurement process.
             </p>
             <p className="saphana-second-main-left-descripton">
-              This next-generation ERP system delivers real-time insights, a
-              streamlined user experience, and powerful analytics capabilities.
-              Its in-memory computing technology, built-in analytics, and
-              machine learning capabilities make it a powerful tool for
-              businesses looking to gain a competitive edge in today's
-              fast-paced business environment.
+              Overall, SAP Ariba simplifies procurement processes, improves
+              efficiency, and reduces costs. Its vast network of buyers and
+              suppliers enables businesses to connect with potential partners
+              and leverage the platform to drive business success.
             </p>
           </Fade>
         </div>
@@ -156,7 +176,7 @@ const SapHana = () => {
       </div>
       <div className="saphana-systems-card-main-container">
         <h1 className="saphana-systems-card-main-heading">
-          Key Features of SAP S/4HANA
+          Key Features of SAP Ariba
         </h1>
 
         <ul className="saphana-systems-card-flex-container">
@@ -182,15 +202,17 @@ const SapHana = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implementation"} />
+      <WhyUsBanner title={"Why Abacus for your SAP Ariba Implementation"} />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners is not a new name to SAP suite of solutions.
-          Our skilled team can map out a strategy on SAP S/4HANA that not only
-          focuses on your current goals but also takes into account the future
-          requirements of your business. We have also successfully executed
-          projects for on-premise, private cloud and hybrid environments.
-          Contact us to get a demo of SAP S/4HANA.
+          With more than 400 specialists, Abacus Cambridge Partners has a large
+          and established force of SAP consultants working at more than 35
+          projects sites across the globe. With 1200+ projects under our belt,
+          we have demonstrated quick wins and have real value to our clients.
+          Our experienced and certified team of SAP consultants delivers
+          unmatched services and smart and scalable business solutions built on
+          SAP technologies, helping our clients to transform into truly dynamic,
+          agile, and intelligent enterprises.
         </p>
 
         <button
@@ -203,4 +225,4 @@ const SapHana = () => {
     </>
   );
 };
-export default SapHana;
+export default SapAriba;

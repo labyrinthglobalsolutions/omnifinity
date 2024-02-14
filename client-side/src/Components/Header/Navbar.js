@@ -55,19 +55,34 @@ const Navbar = () => {
                   <li>
                     Enterprise Systems
                     <ul className="enter-prise-menu">
-                      <Link to="/sap-hana" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-hana"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP S/4 HANA</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-business-by-design"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Business ByDesign</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-business-one"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Business One</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-customer-checkout"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Customer Checkout</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link
+                        to="/enterprise-systems/sap-ariba"
+                        className="sub-menu-list-item"
+                      >
                         <li>SAP Ariba</li>
                       </Link>
                     </ul>
@@ -91,16 +106,16 @@ const Navbar = () => {
                         <li>Digital Financial Services</li>
                       </Link>
                     </ul>
-                    <FaCaretRight  className="right-icon" />
+                    <FaCaretRight className="right-icon" />
                   </li>
                 </Link>
-                <Link to="/mendixPage"  className="sub-menu-list-item">
-                  <li>Mendix</li> 
-                  <FaCaretRight  className="right-icon mt-2 mr-2" />
+                <Link to="/mendixPage" className="sub-menu-list-item">
+                  <li>Mendix</li>
+                  <FaCaretRight className="right-icon mt-2 mr-2" />
                 </Link>
-                <Link to="/polarionPage"  className="sub-menu-list-item">
-                  <li>Polarion</li> 
-                  <FaCaretRight  className="right-icon mt-2 mr-2" />
+                <Link to="/polarionPage" className="sub-menu-list-item">
+                  <li>Polarion</li>
+                  <FaCaretRight className="right-icon mt-2 mr-2" />
                 </Link>
                 <Link to="/managed-services" className="sub-menu-list-item">
                   <li>
