@@ -39,6 +39,7 @@
   color: #fff;
   font-size: 24px;
   margin: 0px;
+  width: 45%;
 }
 .saphana-second-main-container {
   display: flex;
@@ -189,4 +190,69 @@
     width: 90%;
     margin-top: 0px;
   }
+}
+
+/* ============================== SAP Business By Design CSS =================================== */
+
+.sap-business-by-design-bg-container {
+  background-image: url("../../../../images/Enterprise/SapBusiness/sapbusinessbg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ============================= SAP Business One CSS ================================== */
+
+.sap-business-one-bg-container {
+  background-image: url("../../../../images/Enterprise/SapBusinessOne/sapbusinessonebg.webp");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.4);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ========================= SAP Customer CSS =============================== */
+
+.sap-customer-bg-container {
+  background-image: url("../../../../images/Enterprise/SapCustomer/sapcustomerbg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.4);
+  background-size: cover;
+  background-position: center;
+}
+
+.sap-customer-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 45%;
+  padding: 30px;
+}
+
+/* =========================== SAP Ariba CSS ================================== */
+
+.sap-ariba-bg-container {
+  background-image: url("../../../../images/Enterprise/SapAriba/saparibabg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./WhyusBanner.css";
 
-const WhyUsBanner = () => {
+const WhyUsBanner = ({ title }) => {
   const [yearsOfExperience, setYearsOfExperience] = useState(0);
   const [sapProjects, setSapProjects] = useState(0);
   const [consultants, setConsultants] = useState(0);
@@ -52,9 +52,7 @@ const WhyUsBanner = () => {
 
   return (
     <div className="why-us-banner-main-container">
-      <h1 className="managed-services-third-heading">
-        Why Abacus for your SAP S/4HANA Implementation
-      </h1>
+      <h1 className="managed-services-third-heading">{title}</h1>
       <div className="why-us-banner-flex-container">
         <div className="why-us-banner-stats-container">
           <h1 className="why-us-banner-stats-text">{yearsOfExperience} +</h1>

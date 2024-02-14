@@ -1,105 +1,99 @@
 import React from "react";
 
-import "./SapHana.css";
+import "../SapHana/SapHana.css";
 import { Fade } from "react-awesome-reveal";
 import WhyUsBanner from "../../WhyUsBanner/WhyusBanner";
-import sapnahana1 from "../../../../images/Enterprise/SapHana/saphana1.png";
-import sapnahana2 from "../../../../images/Enterprise/SapHana/saphana2.png";
-import sapnahana3 from "../../../../images/Enterprise/SapHana/saphana3.png";
-import sapnahana4 from "../../../../images/Enterprise/SapHana/saphana4.png";
-import sapnahana5 from "../../../../images/Enterprise/SapHana/saphana5.png";
-import sapnahana6 from "../../../../images/Enterprise/SapHana/saphana6.png";
-import sapnahana7 from "../../../../images/Enterprise/SapHana/saphana7.png";
+
+import sapbusinessone1 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone1.jpg";
+import sapbusinessone2 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone2.webp";
+import sapbusinessone3 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone3.webp";
+import sapbusinessone4 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone4.jpg";
+import sapbusinessone5 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone5.webp";
+import sapbusinessone6 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone6.webp";
 import { useNavigate } from "react-router-dom";
+
 const data = [
   {
     id: 1,
-    image: sapnahana1,
-    heading: "Streamlined Data Model",
+    image: sapbusinessone1,
+    heading: "Financial Management",
     description:
-      "Unlike traditional ERP systems, SAP S/4HANA utilizes a simplified data model that eliminates redundancies and reduces data footprint. This streamlined approach results in faster processing and improved performance.",
+      "SAP Business One helps manage financials, including general ledger, accounts payable, accounts receivable, fixed assets, and banking. The software also generates financial reports and statements quickly and accurately.",
     link: "",
   },
   {
     id: 2,
-    image: sapnahana2,
-    heading: "In-Memory Computing",
+    image: sapbusinessone2,
+    heading: "Sales Management",
     description:
-      "SAP S/4HANA leverages in-memory computing technology that enables the processing of large amounts of data in real-time. This allows users to access insights and make informed decisions quickly and accurately. ",
+      "SAP Business One enables managing sales processes, including customer data, sales opportunities, sales orders, and invoicing. The software tracks customer interactions and analyzes sales performance to identify areas for improvement.",
     link: "",
   },
   {
     id: 3,
-    image: sapnahana3,
-    heading: "Real-time Analytics",
+    image: sapbusinessone3,
+    heading: "Customer Relationship Management",
     description:
-      "SAP S/4HANA comes with built-in analytics capabilities that enable users to analyze data in real-time. This includes predictive analytics, which helps organizations forecast future trends and make data-driven decisions.",
+      "SAP Business One includes CRM features to manage customer interactions, such as sales, marketing, and service activities. The software tracks customer data, sales history, and service requests to improve the customer experience.",
     link: "",
   },
   {
     id: 4,
-    image: sapnahana4,
-    heading: "Mobile-first",
+    image: sapbusinessone4,
+    heading: "Inventory Management",
     description:
-      "SAP S/4HANA has been designed with a mobile-first approach, making it accessible from any device at any time, from anywhere.",
+      "SAP Business One streamlines inventory management by tracking stock levels, managing purchase orders, and monitoring demand. The software's forecasting capabilities enable businesses to anticipate demand and plan production accordingly.",
     link: "",
   },
   {
     id: 5,
-    image: sapnahana5,
-    heading: "Enhanced User Experience",
+    image: sapbusinessone5,
+    heading: "Procurement Management",
     description:
-      "The system provides a modern, intuitive user interface that is customizable and easy to use, leading to better user adoption and increased productivity.",
+      "SAP Business One enables managing procurement processes, including purchase requests, purchase orders, and goods receipts. The software monitors supplier performance and tracks deliveries to ensure timely and cost-effective procurement.",
     link: "",
   },
   {
     id: 6,
-    image: sapnahana6,
-    heading: "Cloud Deployment",
+    image: sapbusinessone6,
+    heading: "Manufacturing Management",
     description:
-      "SAP S/4HANA can be deployed on-premise, in the cloud, or in a hybrid environment, giving organizations the flexibility to choose the deployment model that best suits their needs.",
-    link: "",
-  },
-  {
-    id: 7,
-    image: sapnahana7,
-    heading: "Machine Learning",
-    description:
-      "SAP S/4HANA leverages machine learning to automate repetitive tasks, identify patterns in data, and provide intelligent recommendations. This enhances efficiency, reduces errors, and increases productivity.",
+      "SAP Business One's manufacturing features enable managing the production process, including bill of materials, production orders, and material requirements planning. The software tracks production costs and analyzes production performance to identify areas for improvement.",
     link: "",
   },
 ];
 
-const SapHana = () => {
+const SapBusinessOne = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="saphana-first-container">
-        <div className="saphana-bg-container"></div>
+        <div className="sap-business-one-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">ENTERPRISE SYSTEMS</h3>
-          <h1 className="saphana-bg-heading">SAP S/4HANA</h1>
-          <p className="saphana-bg-sub-heading">The ultimate ERP</p>
+          <h1 className="saphana-bg-heading">SAP Business One</h1>
+          <p className="saphana-bg-sub-heading">
+            Manage your entire company with a single, affordable ERP
+          </p>
         </div>
       </div>
       <div className="saphana-second-main-container">
         <div className="saphana-second-main-left-container">
           <Fade direction="up">
             <p className="saphana-second-main-left-descripton">
-              SAP S/4HANA is an advanced ERP (Enterprise Resource Planning)
-              system designed to help businesses operate smarter, faster, and
-              simpler. This modern platform is powered by state-of-the-art
-              in-memory computing technology and offers a range of advanced
-              features to improve the user experience, simplify business
-              processes, and provide real-time insights.
+              SAP Business One is a comprehensive ERP software solution designed
+              to help small and medium-sized enterprises (SMEs) streamline and
+              optimize their business processes. The software allows SMEs to
+              manage their financials, sales, customer relationship management
+              (CRM), procurement, inventory, manufacturing, and project
+              management with ease.
             </p>
             <p className="saphana-second-main-left-descripton">
-              This next-generation ERP system delivers real-time insights, a
-              streamlined user experience, and powerful analytics capabilities.
-              Its in-memory computing technology, built-in analytics, and
-              machine learning capabilities make it a powerful tool for
-              businesses looking to gain a competitive edge in today's
-              fast-paced business environment.
+              SAP Business One is designed to be easy to implement and use. The
+              software's user-friendly interface and customizable dashboards
+              enable users to access and analyze the data needed to make
+              informed business decisions.
             </p>
           </Fade>
         </div>
@@ -156,7 +150,7 @@ const SapHana = () => {
       </div>
       <div className="saphana-systems-card-main-container">
         <h1 className="saphana-systems-card-main-heading">
-          Key Features of SAP S/4HANA
+          Key Features of SAP Business One
         </h1>
 
         <ul className="saphana-systems-card-flex-container">
@@ -182,15 +176,17 @@ const SapHana = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implementation"} />
+      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implmentation"} />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners is not a new name to SAP suite of solutions.
-          Our skilled team can map out a strategy on SAP S/4HANA that not only
-          focuses on your current goals but also takes into account the future
-          requirements of your business. We have also successfully executed
-          projects for on-premise, private cloud and hybrid environments.
-          Contact us to get a demo of SAP S/4HANA.
+          With our decades of experience, Abacus has established itself as one
+          of the most trusted implementation partners of SAP technologies. With
+          our presence in 35 countries and over 1200 SAP Business One
+          implementations across industries, our experienced and certified team
+          of SAP Business One consultants delivers unmatched services and smart
+          and scalable business solutions built on SAP technologies to our
+          clients — helping them transform into truly dynamic, agile, and
+          adaptable enterprises. Contact us to get a demo of SAP Business One.
         </p>
 
         <button
@@ -203,4 +199,4 @@ const SapHana = () => {
     </>
   );
 };
-export default SapHana;
+export default SapBusinessOne;

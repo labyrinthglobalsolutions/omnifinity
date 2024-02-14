@@ -1,105 +1,82 @@
 import React from "react";
 
-import "./SapHana.css";
+import "../SapHana/SapHana.css";
 import { Fade } from "react-awesome-reveal";
 import WhyUsBanner from "../../WhyUsBanner/WhyusBanner";
-import sapnahana1 from "../../../../images/Enterprise/SapHana/saphana1.png";
-import sapnahana2 from "../../../../images/Enterprise/SapHana/saphana2.png";
-import sapnahana3 from "../../../../images/Enterprise/SapHana/saphana3.png";
-import sapnahana4 from "../../../../images/Enterprise/SapHana/saphana4.png";
-import sapnahana5 from "../../../../images/Enterprise/SapHana/saphana5.png";
-import sapnahana6 from "../../../../images/Enterprise/SapHana/saphana6.png";
-import sapnahana7 from "../../../../images/Enterprise/SapHana/saphana7.png";
+
+import sapcustomer1 from "../../../../images/Enterprise/SapCustomer/sapcustomer1.jpg";
+import sapcustomer2 from "../../../../images/Enterprise/SapCustomer/sapcustomer2.jpg";
+
+import sapcustomer3 from "../../../../images/Enterprise/SapCustomer/sapcustomer3.jpg";
+
+import sapcustomer4 from "../../../../images/Enterprise/SapCustomer/sapcustomer4.jpg";
+
 import { useNavigate } from "react-router-dom";
+
 const data = [
   {
     id: 1,
-    image: sapnahana1,
-    heading: "Streamlined Data Model",
+    image: sapcustomer1,
+    heading: "Easy-to-use interface",
     description:
-      "Unlike traditional ERP systems, SAP S/4HANA utilizes a simplified data model that eliminates redundancies and reduces data footprint. This streamlined approach results in faster processing and improved performance.",
+      "SAP customer checkout has an intuitive interface that makes it easy for your employees to use. This reduces the amount of training time needed and ensures that your staff can quickly and easily process transactions.",
     link: "",
   },
   {
     id: 2,
-    image: sapnahana2,
-    heading: "In-Memory Computing",
+    image: sapcustomer2,
+    heading: "Sales Management",
     description:
-      "SAP S/4HANA leverages in-memory computing technology that enables the processing of large amounts of data in real-time. This allows users to access insights and make informed decisions quickly and accurately. ",
+      ": SAP customer checkout supports multiple channels, including online, mobile, and in-store. This enables you to provide a seamless customer experience across all channels, improving customer satisfaction and loyalty.",
     link: "",
   },
   {
     id: 3,
-    image: sapnahana3,
-    heading: "Real-time Analytics",
+    image: sapcustomer3,
+    heading: "Real-time inventory management",
     description:
-      "SAP S/4HANA comes with built-in analytics capabilities that enable users to analyze data in real-time. This includes predictive analytics, which helps organizations forecast future trends and make data-driven decisions.",
+      "With SAP customer checkout, you can manage your inventory in real-time. This allows you to quickly identify which products are selling well and which ones need to be restocked.",
     link: "",
   },
   {
     id: 4,
-    image: sapnahana4,
-    heading: "Mobile-first",
+    image: sapcustomer4,
+    heading: "Integrated payments",
     description:
-      "SAP S/4HANA has been designed with a mobile-first approach, making it accessible from any device at any time, from anywhere.",
-    link: "",
-  },
-  {
-    id: 5,
-    image: sapnahana5,
-    heading: "Enhanced User Experience",
-    description:
-      "The system provides a modern, intuitive user interface that is customizable and easy to use, leading to better user adoption and increased productivity.",
-    link: "",
-  },
-  {
-    id: 6,
-    image: sapnahana6,
-    heading: "Cloud Deployment",
-    description:
-      "SAP S/4HANA can be deployed on-premise, in the cloud, or in a hybrid environment, giving organizations the flexibility to choose the deployment model that best suits their needs.",
-    link: "",
-  },
-  {
-    id: 7,
-    image: sapnahana7,
-    heading: "Machine Learning",
-    description:
-      "SAP S/4HANA leverages machine learning to automate repetitive tasks, identify patterns in data, and provide intelligent recommendations. This enhances efficiency, reduces errors, and increases productivity.",
+      "SAP customer checkout supports a wide range of payment options, including credit and debit cards, mobile payments, and gift cards. This ensures that your customers can pay in the way that's most convenient for them.",
     link: "",
   },
 ];
 
-const SapHana = () => {
+const SapCustomer = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="saphana-first-container">
-        <div className="saphana-bg-container"></div>
+        <div className="sap-customer-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">ENTERPRISE SYSTEMS</h3>
-          <h1 className="saphana-bg-heading">SAP S/4HANA</h1>
-          <p className="saphana-bg-sub-heading">The ultimate ERP</p>
+          <h1 className="saphana-bg-heading">SAP Customer Checkout</h1>
+          <p className="saphana-bg-sub-heading">A comprehensive POS Solution</p>
         </div>
       </div>
       <div className="saphana-second-main-container">
         <div className="saphana-second-main-left-container">
           <Fade direction="up">
             <p className="saphana-second-main-left-descripton">
-              SAP S/4HANA is an advanced ERP (Enterprise Resource Planning)
-              system designed to help businesses operate smarter, faster, and
-              simpler. This modern platform is powered by state-of-the-art
-              in-memory computing technology and offers a range of advanced
-              features to improve the user experience, simplify business
-              processes, and provide real-time insights.
+              SAP customer checkout is a powerful point-of-sale (POS) software
+              that can help you streamline your checkout process, enhance
+              customer experience, and increase your revenue. This solution
+              allows you to manage all your sales transactions in real-time,
+              from start to finish.
             </p>
             <p className="saphana-second-main-left-descripton">
-              This next-generation ERP system delivers real-time insights, a
-              streamlined user experience, and powerful analytics capabilities.
-              Its in-memory computing technology, built-in analytics, and
-              machine learning capabilities make it a powerful tool for
-              businesses looking to gain a competitive edge in today's
-              fast-paced business environment.
+              One of the most significant advantages of SAP Customer Checkout is
+              its adaptability. This software can function as a standalone
+              solution or be integrated effortlessly with other SAP software
+              solutions, giving you the flexibility to customize it to meet your
+              business's specific needs.
             </p>
           </Fade>
         </div>
@@ -156,14 +133,14 @@ const SapHana = () => {
       </div>
       <div className="saphana-systems-card-main-container">
         <h1 className="saphana-systems-card-main-heading">
-          Key Features of SAP S/4HANA
+          Key Features of SAP Customer Checkout
         </h1>
 
         <ul className="saphana-systems-card-flex-container">
           {data.map((each) => {
             return (
               <Fade damping={0.1} direction="up" delay={90}>
-                <li className="saphana-systems-card-container">
+                <li className="sap-customer-card-container">
                   <img
                     src={each.image}
                     alt=""
@@ -182,15 +159,14 @@ const SapHana = () => {
           })}
         </ul>
       </div>
-      <WhyUsBanner title={"Why Abacus for your SAP S/4HANA Implementation"} />
+      <WhyUsBanner
+        title={"Why Abacus for your SAP Customer Checkout Implementation"}
+      />
       <div className="saphana-last-container">
         <p className="saphana-last-description">
-          Abacus Cambridge Partners is not a new name to SAP suite of solutions.
-          Our skilled team can map out a strategy on SAP S/4HANA that not only
-          focuses on your current goals but also takes into account the future
-          requirements of your business. We have also successfully executed
-          projects for on-premise, private cloud and hybrid environments.
-          Contact us to get a demo of SAP S/4HANA.
+          If you're looking to tailor POS solution for your business's specific
+          requirements, then Abacus Cambridge Partners is the perfect PARTNER.
+          Contact us to get a demo of SAP Customer Checkout.
         </p>
 
         <button
@@ -203,4 +179,4 @@ const SapHana = () => {
     </>
   );
 };
-export default SapHana;
+export default SapCustomer;
