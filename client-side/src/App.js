@@ -6,6 +6,7 @@ import HomePage from "./Components/HomePage/Home";
 import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
 import ResellerPolarionPage from "./Components/Services/ResellerPolarianPage";
+import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js";
 import AdminRegistration from "./AdminComponents/adminSignUp";
 import AdminEmailVerify from "./AdminComponents/adminEmailVerify";
 import AdminLogin from "./AdminComponents/adminLogin";
@@ -62,6 +63,7 @@ function App() {
         <Route path="/innovation-solutions" element={<InnovationSolutions />} />
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
+
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
         <Route
           path="/enterprise-systems/sap-business-by-design"
@@ -83,7 +85,7 @@ function App() {
         />
 
         <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
-
+        <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/contactUs" element={<Contact />} />

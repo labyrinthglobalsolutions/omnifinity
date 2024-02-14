@@ -1,0 +1,69 @@
+.AnalyticsTotalContainer {
+  min-height: 100vh;
+}
+.AnalyticsImageContainer {
+  background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovative-Solutions---Advanced-Analytics-&-Business-Intelligence.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 12% 0 5% 0;
+  height: 600px;
+}
+.content-container {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-family: "PT Sans";
+  color: #ffffff;
+}
+.AnalyticsCardsContainer {
+  margin-top: -400px;
+}
+@media (max-width: 767px) {
+  .AnalyticsCardsContainer {
+    margin-top: 9px;
+  }
+}
+.AnalyticsHeading {
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  font-size: 24px;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.cardsContainer :hover {
+  box-shadow: 0 43px 70px rgba(0, 0, 0, 0.12);
+}
+
+.AnalyticsList {
+  padding: 0px !important;
+  list-style-type: disc;
+}
+.AnalyticsListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AnalyticsActive {
+  border-radius: 16px;
+  background: #0f4494;
+  border: none;
+  color: white;
+}
+.AnalyticsInactive {
+  color: blue;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
