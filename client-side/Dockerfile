@@ -1,23 +1,11 @@
-# Use an official Node.js image as a base image
-FROM node:20-alpine3.18
+# Use an official Apache image as a base image
+FROM httpd:2.4-alpine
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /usr/local/apache2/htdocs
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+# Copy the built frontend files into the default Apache serving directory
+COPY build/ .
 
-# Install project dependencies
-RUN npm install --force
-
-# Copy all project files to the working directory
-COPY . .
-
-# Build your frontend application (adjust the build command based on your frontend setup)
-RUN npm run build
-
-# Expose the port that the app will run on (use the port your app is configured to run on)
-EXPOSE 3006
-
-# Command to run the application
-CMD ["npm", "start"]
+# Expose the port that the Apache server will run on (port 80 by default)
+EXPOSE 80
