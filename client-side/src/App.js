@@ -13,7 +13,7 @@ import AdminLogin from "./AdminComponents/adminLogin";
 import AdminPannel from "./AdminComponents/adminPanel";
 import Contact from "./Components/ContactUs/Contact";
 import Footer from "./Components/Footer/Footer";
-import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js"
+
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
@@ -24,6 +24,8 @@ import SapBusinessOne from "./Components/Services/EnterpriseEdition/SapBusinessO
 import SapCustomer from "./Components/Services/EnterpriseEdition/SapCustomer/SapCustomer.js";
 import SapAriba from "./Components/Services/EnterpriseEdition/SapAriba/SapAriba.js";
 import ManagedCloud from "./Components/Services/ManagedServices/ManagedCloud/ManagedCloud.js";
+import DevOps from "./Components/Services/ManagedServices/DevOps/DevOps.js";
+import Staff from "./Components/Services/ManagedServices/StaffAgumentation/Staff.js";
 
 function App() {
   const location = useLocation();
@@ -83,6 +85,12 @@ function App() {
         <Route
           path="/managed-services/manage-cloud"
           element={<ManagedCloud />}
+        />
+
+        <Route path="/managed-services/devops" element={<DevOps />} />
+        <Route
+          path="/managed-services/staff-augmentation"
+          element={<Staff />}
         />
 
         <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
