@@ -53,6 +53,33 @@ export default function HomePage() {
 
   const [HomeImages, setCards] = useState([]);
 
+  const Banners=[
+    {
+      projectId:1,
+      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
+      title:"Operate",
+      description:"Master Your Operations with Expert Managed Services"
+    },
+    {
+      projectId:2,
+      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
+      title:"BUILD YOUR DIGITAL CORE",
+      description:"Empower Your Enterprise with Unrivalled Systems"
+    },
+    {
+      projectId:3,
+      imageUrl:"	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
+      title:"Embrace the AI Transformation",
+      description:"Unleashing New Business Horizons"
+    },
+    {
+      projectId:4,
+      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
+      title:"Innovate",
+      description:"Harness Cutting-Edge Frameworks for Business Innovation"
+    },
+  ]
+
   const getBannerImages = async () => {
     try {
       const options = {
@@ -294,8 +321,8 @@ export default function HomePage() {
                   <img
                     src={image}
                     alt={`${index + 1}`}
-                    height="130"
-                    width="130"
+                
+                    width="200"
                   />
                 </div>
               ))}
@@ -364,7 +391,7 @@ export default function HomePage() {
             <h1 className="text-center mb-3 mt-2">Featured Solutions</h1>
           </div>
           {HomeCards.map((each) => (
-            <div className="col-12 col-md-4 ">
+            <div className="col-12 col-md-4  mb-3">
               <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
                 <img
                   src={each.imageUrl}
