@@ -134,7 +134,10 @@ export default function Analytics() {
                   Enquire Now
                 </h1>
                 <form className="form-control p-3">
-                    <p classname="mb-2 mt-2 text-center p-2">Please fill in your information and we'll get in touch with you.</p>
+                  <p classname="mb-2 mt-2 text-center p-2">
+                    Please fill in your information and we'll get in touch with
+                    you.
+                  </p>
                   <label htmlFor="firstName">
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
@@ -214,7 +217,7 @@ export default function Analytics() {
                     style={{
                       height: "45px",
                       width: "100px",
-                      border:"none",
+                      border: "none",
                       background: "#0f4494",
                       cursor: "pointer",
                       display: "flex",
@@ -381,7 +384,14 @@ export default function Analytics() {
               <h4 className="mt-3 mb-3 p-2">{Filtered[0].title4}</h4>
               <p className="mt-3 mb-3 p-2">{Filtered[0].description4}</p>
             </div>
-            <div className="col-12 col-md-6 mt-3 text-center mb-3" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <div
+              className="col-12 col-md-6 mt-3 text-center mb-3"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <img src={Filtered[0].imageUrl} width="600" height="447" alt="" />
             </div>
             <div className="col-12">

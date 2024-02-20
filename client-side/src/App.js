@@ -6,13 +6,14 @@ import HomePage from "./Components/HomePage/Home";
 import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
 import ResellerPolarionPage from "./Components/Services/ResellerPolarianPage";
+import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js";
 import AdminRegistration from "./AdminComponents/adminSignUp";
 import AdminEmailVerify from "./AdminComponents/adminEmailVerify";
 import AdminLogin from "./AdminComponents/adminLogin";
 import AdminPannel from "./AdminComponents/adminPanel";
 import Contact from "./Components/ContactUs/Contact";
 import Footer from "./Components/Footer/Footer";
-import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js"
+
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
@@ -23,6 +24,8 @@ import SapBusinessOne from "./Components/Services/EnterpriseEdition/SapBusinessO
 import SapCustomer from "./Components/Services/EnterpriseEdition/SapCustomer/SapCustomer.js";
 import SapAriba from "./Components/Services/EnterpriseEdition/SapAriba/SapAriba.js";
 import ManagedCloud from "./Components/Services/ManagedServices/ManagedCloud/ManagedCloud.js";
+import DevOps from "./Components/Services/ManagedServices/DevOps/DevOps.js";
+import Staff from "./Components/Services/ManagedServices/StaffAgumentation/Staff.js";
 
 function App() {
   const location = useLocation();
@@ -63,6 +66,7 @@ function App() {
         <Route path="/innovation-solutions" element={<InnovationSolutions />} />
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
+
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
         <Route
           path="/enterprise-systems/sap-business-by-design"
@@ -83,8 +87,14 @@ function App() {
           element={<ManagedCloud />}
         />
 
-        <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
+        <Route path="/managed-services/devops" element={<DevOps />} />
+        <Route
+          path="/managed-services/staff-augmentation"
+          element={<Staff />}
+        />
 
+        <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
+        <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="/contactUs" element={<Contact />} />

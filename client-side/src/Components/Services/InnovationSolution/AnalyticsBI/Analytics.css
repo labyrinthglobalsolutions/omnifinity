@@ -21,7 +21,7 @@
 .AnalyticsCardsContainer {
   margin-top: -400px;
 }
-@media (max-width:767px ) {
+@media (max-width: 767px) {
   .AnalyticsCardsContainer {
     margin-top: 9px;
   }
@@ -57,7 +57,7 @@
 .AnalyticsActive {
   border-radius: 16px;
   background: #0f4494;
-border:none;
+  border: none;
   color: white;
 }
 .AnalyticsInactive {
