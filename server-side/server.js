@@ -9,6 +9,7 @@ import AdminRouter from "./Routes/adminRoutes.js";
 import BannerRouter from "./Routes/bannerRoutes.js";
 import ServiceRouter from "./Routes/serviceRoutes.js";
 import partnerRouter from "./Routes/partnerRoutes.js";
+import ContactRouter from "./Routes/contactRoutes.js";
 
 //config
 dotenv.config();
@@ -35,7 +36,8 @@ app.use(
   AdminRouter,
 BannerRouter,
 ServiceRouter,
-partnerRouter
+partnerRouter,
+ContactRouter
 );
 // Define a simple route
 app.get("/", (req, res) => {
